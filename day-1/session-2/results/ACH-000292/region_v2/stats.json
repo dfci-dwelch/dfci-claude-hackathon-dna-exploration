@@ -1,0 +1,10 @@
+{
+ "line": "NCI-H841",
+ "model_id": "ACH-000292",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 48750660,
+ "bases": 4923816660,
+ "seconds": 287
+}

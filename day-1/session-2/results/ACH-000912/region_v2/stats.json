@@ -1,0 +1,10 @@
+{
+ "line": "NCI-H2286",
+ "model_id": "ACH-000912",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 52731789,
+ "bases": 5325910689,
+ "seconds": 241
+}

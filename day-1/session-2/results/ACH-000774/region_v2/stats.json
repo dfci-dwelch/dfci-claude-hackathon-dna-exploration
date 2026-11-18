@@ -1,0 +1,10 @@
+{
+ "line": "RERF-LC-Ad2",
+ "model_id": "ACH-000774",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 36514426,
+ "bases": 5488388871,
+ "seconds": 111
+}

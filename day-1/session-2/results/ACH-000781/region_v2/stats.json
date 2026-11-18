@@ -1,0 +1,10 @@
+{
+ "line": "NCI-H2023",
+ "model_id": "ACH-000781",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 43190603,
+ "bases": 6521781053,
+ "seconds": 95
+}
