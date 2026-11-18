@@ -1,0 +1,10 @@
+{
+ "line": "U-2 OS",
+ "model_id": "ACH-000364",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 48780642,
+ "bases": 4926844842,
+ "seconds": 348
+}

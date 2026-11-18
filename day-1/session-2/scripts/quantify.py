@@ -1,6 +1,6 @@
 """Count array-specific k-mer hits in a remote CCLE WGS CRAM/BAM.
 
-  mode=region : fetch only hg38 target regions (data/kmers/hg38_regions_v1.tsv), unplaced
+  mode=region : fetch only hg38 target regions (--regions, default data/kmers/hg38_regions_v2.tsv), unplaced
                 unmapped reads ('*'), and single-copy control windows.
   mode=full   : stream every read (genome split into chunks, plus all small contigs, plus '*').
 
@@ -10,7 +10,8 @@ A read is attributed to the chunk containing its reference_start, so overlapping
 double count. Placed-unmapped reads (mate mapped) are attributed to their mate's position.
 
 Outputs results/<model_id>/<mode>/: hits.tsv (group, contig, bin_1Mb, unmapped, hits),
-coverage.tsv (control window bases), stats.json.
+coverage.tsv (control window bases), kmer_counts.tsv (per-k-mer hits for rDNA groups), stats.json.
+Output dir name = --outname (default: mode).
 """
 import sys, os, json, time, argparse, multiprocessing as mp
 from concurrent.futures import ProcessPoolExecutor
@@ -24,7 +25,7 @@ BITS, BATCH_BASES, FULL_CHUNK = 27, 6_000_000, 20_000_000
 SKIP = 0x100 | 0x800 | 0x200
 
 # globals inherited by forked workers
-T = G = BM = None; NAMES = []; CONTROLS = None
+T = G = BM = None; NAMES = []; CONTROLS = None; PERK = None  # PERK: bool mask of targets tracked per k-mer
 
 
 def load_targets(tag):
@@ -33,6 +34,8 @@ def load_targets(tag):
     keep = (d["n_out"] == 0) & (d["n_home"] > 0)
     T, G, NAMES = d["kmer"][keep], d["group"][keep], list(d["group_names"])
     BM = make_packed_bitmap(T, BITS)
+    global PERK
+    PERK = np.array([NAMES[g].startswith("rDNA") for g in G])
     return d
 
 
@@ -70,6 +73,11 @@ class Acc:
             for r, g, n in zip(u[0], u[1], cnt):
                 key = (NAMES[g],) + self.meta[r]
                 self.tally[key] = self.tally.get(key, 0) + int(n)
+            pk = idx[PERK[idx]]
+            if len(pk):
+                ui, uc = np.unique(pk, return_counts=True)
+                for i, n in zip(ui.tolist(), uc.tolist()):
+                    key = ("__kmer__", i); self.tally[key] = self.tally.get(key, 0) + n
         self.buf, self.meta, self.nb = [], [], 0
 
 
@@ -112,8 +120,8 @@ def full_units(f):
     return units
 
 
-def region_units():
-    r = pd.read_csv("data/kmers/hg38_regions_v1.tsv", sep="\t").sort_values(["contig", "start"])
+def region_units(path):
+    r = pd.read_csv(path, sep="\t").sort_values(["contig", "start"])
     merged = []
     for c, s, e in r[["contig", "start", "end"]].itertuples(index=False):
         if merged and merged[-1][0] == c and s <= merged[-1][2]: merged[-1][2] = max(merged[-1][2], e)
@@ -128,14 +136,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("line"); ap.add_argument("--mode", choices=["region", "full"], default="region")
     ap.add_argument("--workers", type=int, default=20); ap.add_argument("--tag", default="v1")
+    ap.add_argument("--regions", default="data/kmers/hg38_regions_v2.tsv"); ap.add_argument("--outname", default=None)
     a = ap.parse_args()
     inv = pd.read_csv("data/meta/inventory.csv"); inv = inv[inv.datatype == "wgs"]
     row = inv[(inv.cell_line_name == a.line) | (inv.model_id == a.line)].iloc[0].to_dict()
     load_targets(a.tag)
     CONTROLS = pd.read_csv("data/kmers/control_windows.tsv", sep="\t")
-    out = f"results/{row['model_id']}/{a.mode}"; os.makedirs(out, exist_ok=True)
+    out = f"results/{row['model_id']}/{a.outname or a.mode}"; os.makedirs(out, exist_ok=True)
     f = open_aln(row)
-    units = full_units(f) if a.mode == "full" else region_units()
+    units = full_units(f) if a.mode == "full" else region_units(a.regions)
     # contig_lengths for clipping region ends
     L = dict(zip(f.references, f.lengths))
     units = [[(c, s, min(e, L.get(c, e))) for c, s, e in u] for u in units]
@@ -168,10 +177,15 @@ def main():
         tl, n, b, c, dt = results[i]
         for k, v in tl.items(): tally[k] = tally.get(k, 0) + v
         reads += n; bases += b; cov += c
+    kc = {k[1]: v for k, v in tally.items() if k[0] == "__kmer__"}
+    tally = {k: v for k, v in tally.items() if k[0] != "__kmer__"}
+    pk_idx = np.nonzero(PERK)[0]
+    pd.DataFrame({"kmer_index": pk_idx, "group": [NAMES[G[i]] for i in pk_idx], "hits": [kc.get(int(i), 0) for i in pk_idx]}) \
+        .to_csv(f"{out}/kmer_counts.tsv", sep="\t", index=False)
     pd.DataFrame([k + (v,) for k, v in tally.items()], columns=["group", "contig", "bin_Mb", "unmapped", "hits"]) \
         .sort_values("hits", ascending=False).to_csv(f"{out}/hits.tsv", sep="\t", index=False)
     pd.DataFrame(cov, columns=["contig", "start", "end", "reads", "aligned_bases"]).to_csv(f"{out}/coverage.tsv", sep="\t", index=False)
-    json.dump({"line": row["cell_line_name"], "model_id": row["model_id"], "sex": row["sex"], "mode": a.mode,
+    json.dump({"line": row["cell_line_name"], "model_id": row["model_id"], "sex": row["sex"], "mode": a.mode, "regions": a.regions if a.mode == "region" else None,
                "reads": reads, "bases": bases, "seconds": round(time.time() - t0)}, open(f"{out}/stats.json", "w"), indent=1)
     print("done", out, f"{time.time()-t0:.0f}s", flush=True)
 

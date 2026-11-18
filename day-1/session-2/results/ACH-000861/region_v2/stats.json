@@ -1,0 +1,10 @@
+{
+ "line": "HOP-62",
+ "model_id": "ACH-000861",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 33062177,
+ "bases": 4922633790,
+ "seconds": 85
+}

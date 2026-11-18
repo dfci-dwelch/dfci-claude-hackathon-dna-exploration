@@ -1,12 +1,12 @@
 """Compare full-stream vs region-mode hits for a line; show where region mode misses hits."""
 import sys, pandas as pd
-m = sys.argv[1]
-F = pd.read_csv(f"results/{m}/full/hits.tsv", sep="\t"); Rg = pd.read_csv(f"results/{m}/region/hits.tsv", sep="\t")
-cf = pd.read_csv(f"results/{m}/full/coverage.tsv", sep="\t"); cr = pd.read_csv(f"results/{m}/region/coverage.tsv", sep="\t")
+m = sys.argv[1]; RD = sys.argv[2] if len(sys.argv) > 2 else "region"; REGFILE = sys.argv[3] if len(sys.argv) > 3 else "data/kmers/hg38_regions_v1.tsv"
+F = pd.read_csv(f"results/{m}/full/hits.tsv", sep="\t"); Rg = pd.read_csv(f"results/{m}/{RD}/hits.tsv", sep="\t")
+cf = pd.read_csv(f"results/{m}/full/coverage.tsv", sep="\t"); cr = pd.read_csv(f"results/{m}/{RD}/coverage.tsv", sep="\t")
 print("control coverage identical:", cf.aligned_bases.tolist() == cr.aligned_bases.tolist())
 t = pd.DataFrame({"full": F.groupby("group").hits.sum(), "region": Rg.groupby("group").hits.sum()}).fillna(0)
 t["region/full"] = (t.region / t.full).round(4); print(t.to_string())
-reg = pd.read_csv("data/kmers/hg38_regions_v1.tsv", sep="\t")
+reg = pd.read_csv(REGFILE, sep="\t")
 def in_reg(r):
     if r.contig == "*": return True
     s = reg[reg.contig == r.contig]

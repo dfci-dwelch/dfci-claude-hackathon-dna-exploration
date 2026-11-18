@@ -1,0 +1,10 @@
+{
+ "line": "SW 1573",
+ "model_id": "ACH-000677",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 31501063,
+ "bases": 4625287972,
+ "seconds": 95
+}

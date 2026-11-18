@@ -1,0 +1,21 @@
+A427 ACH-000757 full: 177 jobs
+  reusing 0 checkpointed jobs, 177 to run
+  10/177 reads=49,287,036 elapsed=46s
+  20/177 reads=110,033,057 elapsed=71s
+  30/177 reads=169,290,890 elapsed=89s
+  40/177 reads=226,025,339 elapsed=112s
+  50/177 reads=288,971,885 elapsed=146s
+  60/177 reads=346,853,606 elapsed=160s
+  70/177 reads=414,885,656 elapsed=191s
+  80/177 reads=470,263,312 elapsed=203s
+  90/177 reads=518,606,184 elapsed=236s
+  100/177 reads=573,737,307 elapsed=247s
+  110/177 reads=619,710,508 elapsed=275s
+  120/177 reads=670,964,479 elapsed=289s
+  130/177 reads=718,123,516 elapsed=305s
+  140/177 reads=763,942,500 elapsed=331s
+  150/177 reads=808,546,222 elapsed=356s
+  160/177 reads=851,545,206 elapsed=365s
+  170/177 reads=879,308,351 elapsed=449s
+  177/177 reads=891,470,619 elapsed=468s
+done results/ACH-000757/full 468s
