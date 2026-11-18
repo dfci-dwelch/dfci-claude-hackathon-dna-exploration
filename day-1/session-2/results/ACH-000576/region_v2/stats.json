@@ -1,0 +1,10 @@
+{
+ "line": "KMS-27",
+ "model_id": "ACH-000576",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 40547106,
+ "bases": 6122613006,
+ "seconds": 136
+}

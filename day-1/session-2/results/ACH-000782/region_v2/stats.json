@@ -1,0 +1,10 @@
+{
+ "line": "SEM",
+ "model_id": "ACH-000782",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 47546002,
+ "bases": 7149153991,
+ "seconds": 101
+}

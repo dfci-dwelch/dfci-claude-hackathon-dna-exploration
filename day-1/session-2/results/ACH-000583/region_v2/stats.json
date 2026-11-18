@@ -1,0 +1,10 @@
+{
+ "line": "MC116",
+ "model_id": "ACH-000583",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 60824562,
+ "bases": 9184508862,
+ "seconds": 222
+}
