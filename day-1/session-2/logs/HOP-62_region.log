@@ -1,0 +1,78 @@
+HOP-62 ACH-000861 region: 69 jobs
+  1/69 reads=52,251 elapsed=14s
+  2/69 reads=103,329 elapsed=15s
+  3/69 reads=191,704 elapsed=22s
+  4/69 reads=337,718 elapsed=46s
+  5/69 reads=449,996 elapsed=46s
+  6/69 reads=546,684 elapsed=46s
+  7/69 reads=606,864 elapsed=46s
+  8/69 reads=665,580 elapsed=46s
+  9/69 reads=722,965 elapsed=46s
+  10/69 reads=795,432 elapsed=46s
+  11/69 reads=937,705 elapsed=46s
+  12/69 reads=1,105,921 elapsed=46s
+  13/69 reads=1,579,169 elapsed=73s
+  14/69 reads=2,111,491 elapsed=93s
+  15/69 reads=2,231,712 elapsed=93s
+  16/69 reads=2,250,563 elapsed=93s
+  17/69 reads=2,292,570 elapsed=93s
+  18/69 reads=2,349,259 elapsed=93s
+  19/69 reads=2,509,165 elapsed=93s
+  20/69 reads=2,541,303 elapsed=93s
+  21/69 reads=2,624,392 elapsed=93s
+  22/69 reads=2,693,889 elapsed=93s
+  23/69 reads=2,774,153 elapsed=93s
+  24/69 reads=2,850,001 elapsed=93s
+  25/69 reads=2,924,739 elapsed=93s
+  26/69 reads=2,995,825 elapsed=93s
+  27/69 reads=3,098,208 elapsed=93s
+  28/69 reads=3,196,679 elapsed=93s
+  29/69 reads=3,261,271 elapsed=93s
+  30/69 reads=3,328,718 elapsed=93s
+  31/69 reads=3,398,546 elapsed=93s
+  32/69 reads=3,477,729 elapsed=93s
+  33/69 reads=3,477,729 elapsed=93s
+  34/69 reads=3,530,230 elapsed=93s
+  35/69 reads=3,584,869 elapsed=93s
+  36/69 reads=3,780,163 elapsed=93s
+  37/69 reads=3,961,146 elapsed=93s
+  38/69 reads=3,961,149 elapsed=93s
+  39/69 reads=3,961,475 elapsed=93s
+  40/69 reads=3,968,079 elapsed=93s
+  41/69 reads=3,976,226 elapsed=93s
+  42/69 reads=3,977,539 elapsed=93s
+  43/69 reads=3,979,031 elapsed=93s
+  44/69 reads=3,995,951 elapsed=93s
+  45/69 reads=4,000,243 elapsed=93s
+  46/69 reads=4,008,755 elapsed=93s
+  47/69 reads=4,016,471 elapsed=93s
+  48/69 reads=4,036,722 elapsed=93s
+  49/69 reads=4,039,749 elapsed=93s
+  50/69 reads=4,039,785 elapsed=93s
+  51/69 reads=4,043,204 elapsed=93s
+  52/69 reads=4,044,159 elapsed=93s
+  53/69 reads=4,048,603 elapsed=93s
+  54/69 reads=4,052,148 elapsed=93s
+  55/69 reads=4,078,582 elapsed=93s
+  56/69 reads=4,078,606 elapsed=93s
+  57/69 reads=4,079,133 elapsed=93s
+  58/69 reads=4,083,817 elapsed=93s
+  59/69 reads=4,091,356 elapsed=93s
+  60/69 reads=4,304,250 elapsed=93s
+  61/69 reads=4,324,931 elapsed=93s
+  62/69 reads=4,410,872 elapsed=93s
+  63/69 reads=4,471,645 elapsed=93s
+  64/69 reads=4,542,326 elapsed=93s
+  65/69 reads=4,624,286 elapsed=93s
+  66/69 reads=4,634,214 elapsed=93s
+  67/69 reads=4,704,378 elapsed=93s
+  68/69 reads=6,035,825 elapsed=93s
+[W::hts_close] EOF marker is absent. The input is probably truncated
+OSError: [Errno 29] Closing failed: Illegal seek: 'https://depmap-omics-ccle.s3.amazonaws.com/data/wgs/cram/CDS-z8DETM.cram'
+Exception ignored in: 'pysam.libcalignmentfile.AlignmentFile.__dealloc__'
+Traceback (most recent call last):
+  File "/home/dwelch/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/concurrent/futures/process.py", line 203, in _process_chunk
+    return [fn(*args) for args in chunk]
+OSError: [Errno 29] Closing failed: Illegal seek: 'https://depmap-omics-ccle.s3.amazonaws.com/data/wgs/cram/CDS-z8DETM.cram'
+  69/69 reads=6,035,825 elapsed=113s
+done results/ACH-000861/region 113s

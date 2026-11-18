@@ -1,0 +1,19 @@
+ORFs: 7264; lifted intact: 7259 (99.9%)
+Lifted ORF bp: 966,165; after CDS subtraction: 785,370 (merged: 724,154)
+ORFs retaining territory: 6466
+orf_biotype
+uORF                    322001
+lncRNA                  295053
+dORF                     79434
+uoORF                    47292
+processed_transcript     34456
+doORF                     7028
+intORF                     106
+orf_biotype
+intORF                  715
+uORF                     30
+uoORF                    26
+lncRNA                   10
+dORF                      5
+processed_transcript      4
+doORF                     3

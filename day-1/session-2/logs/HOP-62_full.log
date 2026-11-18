@@ -1,0 +1,23 @@
+HOP-62 ACH-000861 full: 177 jobs
+  reusing 0 checkpointed jobs, 177 to run
+  10/177 reads=43,490,256 elapsed=1592s
+HOP-62 ACH-000861 full: 177 jobs
+  reusing 13 checkpointed jobs, 164 to run
+  23/177 reads=119,745,194 elapsed=46s
+  33/177 reads=178,606,234 elapsed=73s
+  43/177 reads=226,169,023 elapsed=82s
+  53/177 reads=277,132,427 elapsed=113s
+  63/177 reads=333,895,444 elapsed=152s
+  73/177 reads=386,870,538 elapsed=172s
+  83/177 reads=436,143,248 elapsed=197s
+  93/177 reads=485,352,642 elapsed=209s
+  103/177 reads=524,517,549 elapsed=231s
+  113/177 reads=566,758,520 elapsed=245s
+  123/177 reads=609,296,203 elapsed=269s
+  133/177 reads=653,572,747 elapsed=280s
+  143/177 reads=691,177,860 elapsed=304s
+  153/177 reads=736,642,125 elapsed=325s
+  163/177 reads=770,139,598 elapsed=341s
+  173/177 reads=802,099,292 elapsed=419s
+  177/177 reads=810,976,286 elapsed=445s
+done results/ACH-000861/full 445s

@@ -1,0 +1,22 @@
+collecting target k-mers
+  rDNA_45S: 41,446 distinct k-mers
+  rDNA_5S: 2,201 distinct k-mers
+  Y_DYZ1_HSat3: 703,791 distinct k-mers
+  Y_DYZ2_HSat1B: 347,268 distinct k-mers
+  Y_DYZ3_aSat: 10,351 distinct k-mers
+  shared between groups (dropped): 1,870
+scanning CHM13 in 328 chunks
+  0/328
+  50/328
+  100/328
+  150/328
+  200/328
+  250/328
+  300/328
+               distinct  absent_from_chm13  unique_to_home  found_elsewhere
+group                                                                      
+Y_DYZ1_HSat3     702913                  0          656407            46506
+Y_DYZ2_HSat1B    346340                  0          333446            12894
+Y_DYZ3_aSat       10351                  0            7362             2989
+rDNA_45S          41396                394           33372             7630
+rDNA_5S            2187                544            1393              250

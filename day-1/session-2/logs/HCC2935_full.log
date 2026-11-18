@@ -1,0 +1,21 @@
+HCC2935 ACH-000150 full: 177 jobs
+  reusing 0 checkpointed jobs, 177 to run
+  10/177 reads=37,796,996 elapsed=44s
+  20/177 reads=82,584,614 elapsed=62s
+  30/177 reads=131,391,083 elapsed=89s
+  40/177 reads=174,903,389 elapsed=96s
+  50/177 reads=211,068,077 elapsed=125s
+  60/177 reads=254,130,257 elapsed=148s
+  70/177 reads=300,060,949 elapsed=165s
+  80/177 reads=341,912,999 elapsed=197s
+  90/177 reads=409,996,523 elapsed=215s
+  100/177 reads=452,223,274 elapsed=233s
+  110/177 reads=486,491,499 elapsed=246s
+  120/177 reads=513,240,417 elapsed=276s
+  130/177 reads=561,943,215 elapsed=299s
+  140/177 reads=618,953,821 elapsed=324s
+  150/177 reads=660,104,881 elapsed=340s
+  160/177 reads=684,046,074 elapsed=352s
+  170/177 reads=717,342,455 elapsed=446s
+  177/177 reads=730,278,900 elapsed=488s
+done results/ACH-000150/full 488s

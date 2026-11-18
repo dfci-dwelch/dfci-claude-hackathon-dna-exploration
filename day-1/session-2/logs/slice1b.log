@@ -1,0 +1,35 @@
+region done: SW 1573
+region done: HCC2935
+region done: A427
+region done: U-2 OS
+full done: HOP-62 10:31:03
+full done: HCC2935 10:39:12
+group                             Y_DYZ1_HSat3  Y_DYZ2_HSat1B  Y_DYZ3_aSat  rDNA_45S  rDNA_5S
+line    sex    mode        depth                                                             
+A427    male   region      44.1         0.1278         0.0627       0.1007    1.0731   0.6636
+               region_run1 44.1         0.1278         0.0627       0.1007    1.0731   0.6636
+HCC2935 male   full        37.0         0.8999         0.7570       1.2810    1.4938   1.4338
+               region      37.0         0.8972         0.5002       1.2800    1.4934   1.4337
+               region_run1 37.0         0.8972         0.5002       1.2800    1.4934   1.4337
+HOP-62  female full        40.7         0.0006         0.0007       0.0008    0.5536   1.4881
+               region      40.7         0.0002         0.0004       0.0000    0.5535   1.4880
+SW 1573 female region      37.3         0.0002         0.0006       0.0000    1.0290   1.4015
+               region_run1 37.3         0.0002         0.0006       0.0000    1.0290   1.4015
+U-2 OS  female region      35.4         0.0003         0.0001       0.0002    0.5156   0.8385
+               region_run1 35.4         0.0003         0.0001       0.0002    0.5156   0.8385
+
+rDNA units per genome (diploid-equivalent):
+group                rDNA_45S  rDNA_5S
+line    mode                          
+A427    region          235.0     73.0
+        region_run1     235.0     73.0
+HCC2935 full            327.0    157.0
+        region          327.0    157.0
+        region_run1     327.0    157.0
+HOP-62  full            121.0    163.0
+        region          121.0    163.0
+SW 1573 region          225.0    154.0
+        region_run1     225.0    154.0
+U-2 OS  region          113.0     92.0
+        region_run1     113.0     92.0
+ALL_DONE

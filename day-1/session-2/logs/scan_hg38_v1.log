@@ -1,0 +1,78 @@
+fraction of kept k-mers present anywhere in hg38:
+                  size      mean
+group                          
+Y_DYZ1_HSat3   656407  0.241800
+Y_DYZ2_HSat1B  333446  0.012224
+Y_DYZ3_aSat      7362  0.816354
+rDNA_45S        33372  0.998472
+rDNA_5S          1393  1.000000
+
+Y_DYZ1_HSat3: 286,967 hits in 29 contigs; top contigs (cum. fraction):
+contig
+chrY                          0.996
+chrUn_JTFH01001512v1_decoy    0.997
+chrUn_JTFH01000876v1_decoy    0.997
+chr17                         0.998
+chrUn_GL000216v2              0.998
+chrUn_KI270438v1              0.999
+chr20                         0.999
+chr10                         0.999
+chrUn_KN707862v1_decoy        0.999
+chr21                         0.999
+chr17_KI270729v1_random       1.000
+chrUn_KN707860v1_decoy        1.000
+
+Y_DYZ2_HSat1B: 4,326 hits in 38 contigs; top contigs (cum. fraction):
+contig
+chrUn_JTFH01001478v1_decoy    0.236
+chrUn_JTFH01001465v1_decoy    0.471
+chrUn_JTFH01001512v1_decoy    0.680
+chrUn_JTFH01000876v1_decoy    0.845
+chrUn_JTFH01001405v1_decoy    0.865
+chrUn_JTFH01001862v1_decoy    0.879
+chrUn_JTFH01001677v1_decoy    0.893
+chrUn_JTFH01001317v1_decoy    0.905
+chrUn_JTFH01001433v1_decoy    0.916
+chrUn_JTFH01001319v1_decoy    0.925
+chr22                         0.934
+chrUn_JTFH01001680v1_decoy    0.941
+
+Y_DYZ3_aSat: 170,391 hits in 15 contigs; top contigs (cum. fraction):
+contig
+chrY                          1.0
+chr13                         1.0
+chrUn_JTFH01001775v1_decoy    1.0
+chr12                         1.0
+chr20                         1.0
+chr6                          1.0
+chrUn_JTFH01001857v1_decoy    1.0
+chrUn_JTFH01001859v1_decoy    1.0
+chr21                         1.0
+chr2                          1.0
+chr7                          1.0
+chrUn_KI270519v1              1.0
+
+rDNA_45S: 201,714 hits in 27 contigs; top contigs (cum. fraction):
+contig
+chr21                         0.560
+chrUn_GL000220v1              0.784
+chr22_KI270733v1_random       0.999
+chrUn_JTFH01000927v1_decoy    0.999
+chrX                          0.999
+chr20                         1.000
+chr17                         1.000
+chr8                          1.000
+chr14                         1.000
+chr15                         1.000
+chr2                          1.000
+chr5                          1.000
+
+rDNA_5S: 23,494 hits in 7 contigs; top contigs (cum. fraction):
+contig
+chr1                   0.999
+chr6                   0.999
+chr4                   1.000
+chr4_KI270896v1_alt    1.000
+chr10                  1.000
+chr11                  1.000
+chr18                  1.000

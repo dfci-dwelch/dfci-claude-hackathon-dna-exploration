@@ -1,0 +1,48 @@
+  rows read: 2,000,000
+  rows read: 4,000,000
+  rows read: 6,000,000
+  rows read: 8,000,000
+  rows read: 10,000,000
+  rows read: 12,000,000
+  rows read: 14,000,000
+  rows read: 16,000,000
+  rows read: 18,000,000
+  rows read: 20,000,000
+  rows read: 22,000,000
+  rows read: 23,159,591
+
+MAF rows: 23,159,591; donors: 1830; projects: 25
+territory: 724,154 bp; unique muts in territory: 3,521; overlaps: 3,807
+donors with >=1 hit: 1117
+Variant_Type
+SNP    3250
+DEL     162
+INS      58
+DNP      51
+                  donors    total  ncorf_muts  donors_with_hit  crude_rate_ratio
+Project_Code                                                                    
+Biliary-AdenoCA       34   599369         118               21              0.76
+Bone-Cart              9     8255           2                1              0.94
+Bone-Epith            11    25379           2                2              0.30
+Bone-Osteosarc        44   175906          38               26              0.84
+Breast-AdenoCa       113   755911         191               72              0.98
+Breast-DCIS            3     6758           1                1              0.57
+Breast-LobularCa       7    24575           8                5              1.26
+CNS-Medullo          146   235067          42               36              0.69
+CNS-PiloAstro         89    23106           6                6              1.00
+Eso-AdenoCa           98  2873564         344               87              0.46
+Head-SCC              13   121589          30               10              0.95
+Kidney-RCC            74   609468         122               58              0.77
+Liver-HCC            264  3558510         511              210              0.56
+Lymph-BNHL            98  1212350         394               80              1.26
+Lymph-CLL             95   239356          42               34              0.68
+Lymph-NOS              2    27621           5                2              0.70
+Myeloid-AML           16    20707           2                2              0.37
+Myeloid-MDS            2     2177           0                0              0.00
+Myeloid-MPN           27    47034          13               10              1.07
+Ovary-AdenoCA         71   727475         166               61              0.88
+Panc-AdenoCA         239  1916168         393              174              0.79
+Panc-Endocrine        85   272061          69               36              0.98
+Prost-AdenoCA        191   824294         152               94              0.71
+Skin-Melanoma         70  7987409         799               66              0.39
+Stomach-AdenoCA       37   563689          71               24              0.49
