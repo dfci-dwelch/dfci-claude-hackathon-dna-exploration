@@ -1,0 +1,10 @@
+{
+ "line": "T-47D",
+ "model_id": "ACH-000147",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 49485786,
+ "bases": 4998064386,
+ "seconds": 199
+}

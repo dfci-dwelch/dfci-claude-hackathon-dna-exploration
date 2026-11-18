@@ -1,0 +1,10 @@
+{
+ "line": "WM-266-4",
+ "model_id": "ACH-001239",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 50375884,
+ "bases": 5087964284,
+ "seconds": 238
+}

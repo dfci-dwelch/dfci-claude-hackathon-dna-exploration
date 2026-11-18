@@ -1,0 +1,10 @@
+{
+ "line": "MV4-11",
+ "model_id": "ACH-000045",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 47370270,
+ "bases": 4784397270,
+ "seconds": 187
+}

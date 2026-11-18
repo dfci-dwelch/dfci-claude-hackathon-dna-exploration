@@ -1,4 +1,14 @@
 oncotree_lineage	r45_acro	r5_1q	log2_5S_45S	n
 Bone	11.33	47.04	2.05	1
+Bowel	23.07	74.26	1.76	7
+Breast	22.61	68.47	1.67	7
+CNS/Brain	36.65	51.39	0.74	7
+Esophagus/Stomach	29.02	83.45	1.58	7
+Head and Neck	34.35	86.19	1.06	7
+Kidney	27.75	76.97	1.47	7
 Lung	27.38	86.58	1.68	11
-Lymphoid	24.17	81.05	1.75	3
+Lymphoid	24.17	88.75	1.82	7
+Myeloid	33.4	77.42	1.33	7
+Ovary/Fallopian Tube	23.72	79.79	1.7	7
+Pancreas	23.88	67.37	1.29	7
+Skin	19.73	83.2	1.96	7

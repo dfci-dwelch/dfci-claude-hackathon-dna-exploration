@@ -1,0 +1,10 @@
+{
+ "line": "RPMI-7951",
+ "model_id": "ACH-000348",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 41499819,
+ "bases": 4191481719,
+ "seconds": 160
+}

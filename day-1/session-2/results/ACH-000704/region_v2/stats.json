@@ -1,0 +1,10 @@
+{
+ "line": "OAW42",
+ "model_id": "ACH-000704",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 43602735,
+ "bases": 4403876235,
+ "seconds": 182
+}

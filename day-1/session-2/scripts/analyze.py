@@ -36,7 +36,7 @@ print(f"n lines = {len(d)}  (with CN covariates: {d.acro_CN.notna().sum()})")
 print("\nY arrays (P_ctrl-adjusted) by reported sex:")
 print(d.groupby("sex")[["Y_DYZ1_HSat3_adj", "Y_DYZ2_HSat1B_adj", "Y_DYZ3_aSat_adj"]].agg(["count", "min", "median", "max"]).T.round(4).to_string())
 fem_max = d.loc[d.sex == "female", "Y_DYZ3_aSat_adj"].max()
-d["Y_status"] = np.where(d.sex == "female", "female", np.where(d.Y_DYZ3_aSat_adj < 0.2, "male_LOY(<0.2)", "male_Y_present"))
+d["Y_status"] = np.select([d.sex == "female", d.Y_DYZ3_aSat_adj.isna(), d.Y_DYZ3_aSat_adj < 0.2], ["female", "male_no_CN", "male_LOY(<0.2)"], "male_Y_present")
 print("female max DYZ3:", round(fem_max, 4), "| male Y status:", d[d.sex == "male"].Y_status.value_counts().to_dict())
 print("males with LOY:", d[d.Y_status == "male_LOY(<0.2)"].cell_line_name.tolist())
 
@@ -78,12 +78,16 @@ res = []
 for metric in ["r45_acro", "r5_1q", "log2_5S_45S"]:
     x = dd[metric]; ok = x.notna()
     X = dd.loc[ok, ge.columns]; xr = x[ok].rank()
-    rho = X.rank().corrwith(xr)  # spearman via ranks
-    n = ok.sum(); t = rho * np.sqrt((n - 2) / (1 - rho ** 2)); p = 2 * stats.t.sf(np.abs(t), n - 2)
-    r = pd.DataFrame({"metric": metric, "gene": rho.index, "rho": rho.values, "p": p}).dropna()
+    # Spearman with per-gene pairwise-complete n (many genes are NaN in a subset of screens)
+    n = X.notna().sum()
+    Xr = X.rank(); xr_g = Xr.notna().mul(x[ok], axis=0).where(Xr.notna())  # metric values restricted to each gene's lines
+    rho = Xr.corrwith(xr_g.rank())
+    t = rho * np.sqrt((n - 2) / (1 - rho ** 2)); p = 2 * stats.t.sf(np.abs(t), n - 2)
+    r = pd.DataFrame({"metric": metric, "gene": rho.index, "n": n.values, "rho": rho.values, "p": p}).dropna()
+    r = r[r.n >= 30]  # require >= 30 lines with data
     r["q_BH"] = multipletests(r.p, method="fdr_bh")[1]; res.append(r)
 R = pd.concat(res); R.to_csv("results/analysis/crispr_scan.tsv", sep="\t", index=False)
 print("candidate genes (spearman rho, p):")
-print(R[R.gene.isin(cand)].pivot_table(index="gene", columns="metric", values=["rho", "p"]).round(3).to_string())
+print(R[R.gene.isin(cand)].pivot_table(index="gene", columns="metric", values=["n", "rho", "p"]).round(3).to_string())
 print("\ngenome-wide top hits per metric (q_BH):")
-for m_, g in R.groupby("metric"): print(m_, g.nsmallest(5, "p")[["gene", "rho", "p", "q_BH"]].round(4).to_string(index=False), sep="\n")
+for m_, g in R.groupby("metric"): print(m_, g.nsmallest(5, "p")[["gene", "n", "rho", "p", "q_BH"]].round(4).to_string(index=False), sep="\n")

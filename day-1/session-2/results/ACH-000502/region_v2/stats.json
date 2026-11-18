@@ -1,0 +1,10 @@
+{
+ "line": "TCC-PAN2",
+ "model_id": "ACH-000502",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 34226507,
+ "bases": 5070408495,
+ "seconds": 97
+}

@@ -1,0 +1,10 @@
+{
+ "line": "SW1463",
+ "model_id": "ACH-000470",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 33126643,
+ "bases": 5002123093,
+ "seconds": 95
+}

@@ -1,0 +1,10 @@
+{
+ "line": "TYK-nu",
+ "model_id": "ACH-000430",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 42295434,
+ "bases": 6142467227,
+ "seconds": 159
+}

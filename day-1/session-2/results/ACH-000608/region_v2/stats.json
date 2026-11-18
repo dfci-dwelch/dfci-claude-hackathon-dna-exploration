@@ -1,0 +1,10 @@
+{
+ "line": "COV644",
+ "model_id": "ACH-000608",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 39899881,
+ "bases": 4029887981,
+ "seconds": 165
+}

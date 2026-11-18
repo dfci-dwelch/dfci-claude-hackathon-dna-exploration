@@ -1,0 +1,10 @@
+{
+ "line": "A-375",
+ "model_id": "ACH-000219",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 57527451,
+ "bases": 5810272551,
+ "seconds": 341
+}

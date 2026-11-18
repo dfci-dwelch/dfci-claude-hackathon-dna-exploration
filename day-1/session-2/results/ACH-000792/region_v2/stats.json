@@ -1,0 +1,10 @@
+{
+ "line": "BFTC-909",
+ "model_id": "ACH-000792",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 50364294,
+ "bases": 5086793694,
+ "seconds": 192
+}

@@ -1,0 +1,10 @@
+{
+ "line": "HCC1143",
+ "model_id": "ACH-000374",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 57602347,
+ "bases": 8697954397,
+ "seconds": 102
+}

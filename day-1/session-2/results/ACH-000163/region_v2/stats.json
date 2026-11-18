@@ -1,0 +1,10 @@
+{
+ "line": "SW579",
+ "model_id": "ACH-000163",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 56117600,
+ "bases": 5667877600,
+ "seconds": 301
+}

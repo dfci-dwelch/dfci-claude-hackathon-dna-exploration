@@ -1,0 +1,10 @@
+{
+ "line": "ONS-76",
+ "model_id": "ACH-000776",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 50644378,
+ "bases": 5115082178,
+ "seconds": 322
+}

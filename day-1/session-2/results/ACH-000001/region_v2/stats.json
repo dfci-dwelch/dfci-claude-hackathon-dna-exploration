@@ -1,0 +1,10 @@
+{
+ "line": "NIH:OVCAR-3",
+ "model_id": "ACH-000001",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 62519353,
+ "bases": 6314454653,
+ "seconds": 240
+}

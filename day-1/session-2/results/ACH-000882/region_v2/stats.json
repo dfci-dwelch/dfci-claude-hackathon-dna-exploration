@@ -1,0 +1,10 @@
+{
+ "line": "IGR-1",
+ "model_id": "ACH-000882",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 55327869,
+ "bases": 8354508219,
+ "seconds": 166
+}

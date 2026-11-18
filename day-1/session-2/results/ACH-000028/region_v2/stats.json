@@ -1,0 +1,10 @@
+{
+ "line": "KPL-1",
+ "model_id": "ACH-000028",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 40068935,
+ "bases": 5933978153,
+ "seconds": 94
+}

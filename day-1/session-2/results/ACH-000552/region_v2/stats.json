@@ -1,0 +1,10 @@
+{
+ "line": "HT-29",
+ "model_id": "ACH-000552",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 52508515,
+ "bases": 5303360015,
+ "seconds": 247
+}

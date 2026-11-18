@@ -1,0 +1,10 @@
+{
+ "line": "SKM-1",
+ "model_id": "ACH-000373",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 42130790,
+ "bases": 6361749290,
+ "seconds": 183
+}

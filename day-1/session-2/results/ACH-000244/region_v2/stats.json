@@ -1,0 +1,10 @@
+{
+ "line": "DK-MG",
+ "model_id": "ACH-000244",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 37786749,
+ "bases": 5705799099,
+ "seconds": 94
+}

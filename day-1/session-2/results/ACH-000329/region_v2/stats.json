@@ -1,0 +1,10 @@
+{
+ "line": "CCF-STTG1",
+ "model_id": "ACH-000329",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 43293047,
+ "bases": 6474992164,
+ "seconds": 93
+}

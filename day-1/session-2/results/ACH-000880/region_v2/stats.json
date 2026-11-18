@@ -1,0 +1,10 @@
+{
+ "line": "AGS",
+ "model_id": "ACH-000880",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 54305784,
+ "bases": 5484884184,
+ "seconds": 284
+}

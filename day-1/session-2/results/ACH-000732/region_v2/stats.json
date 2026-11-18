@@ -1,0 +1,10 @@
+{
+ "line": "PE/CA-PJ41 (clone D2)",
+ "model_id": "ACH-000732",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 47514568,
+ "bases": 7174699768,
+ "seconds": 154
+}

@@ -1,0 +1,10 @@
+{
+ "line": "UOK101",
+ "model_id": "ACH-000262",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 43731169,
+ "bases": 6603406519,
+ "seconds": 100
+}

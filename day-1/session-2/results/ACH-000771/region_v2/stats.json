@@ -1,0 +1,10 @@
+{
+ "line": "BICR 56",
+ "model_id": "ACH-000771",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 43642690,
+ "bases": 6590046190,
+ "seconds": 102
+}

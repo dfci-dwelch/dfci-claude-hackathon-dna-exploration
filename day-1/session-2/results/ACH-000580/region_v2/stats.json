@@ -1,0 +1,10 @@
+{
+ "line": "C32",
+ "model_id": "ACH-000580",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 51356819,
+ "bases": 7754879669,
+ "seconds": 225
+}

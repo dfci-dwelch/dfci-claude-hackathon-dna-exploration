@@ -1,0 +1,10 @@
+{
+ "line": "JHOC-5",
+ "model_id": "ACH-000324",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 34868710,
+ "bases": 5265175210,
+ "seconds": 93
+}

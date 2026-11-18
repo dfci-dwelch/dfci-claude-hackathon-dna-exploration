@@ -1,0 +1,10 @@
+{
+ "line": "Caov-3",
+ "model_id": "ACH-000713",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 46553437,
+ "bases": 4701897137,
+ "seconds": 205
+}

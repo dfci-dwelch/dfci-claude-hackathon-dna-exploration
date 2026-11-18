@@ -1,0 +1,10 @@
+{
+ "line": "YD-8",
+ "model_id": "ACH-000630",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 36107992,
+ "bases": 5404401860,
+ "seconds": 101
+}

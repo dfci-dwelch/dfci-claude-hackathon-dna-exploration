@@ -1,0 +1,10 @@
+{
+ "line": "SK-RC-52",
+ "model_id": "ACH-000385",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 36926303,
+ "bases": 5255983286,
+ "seconds": 89
+}

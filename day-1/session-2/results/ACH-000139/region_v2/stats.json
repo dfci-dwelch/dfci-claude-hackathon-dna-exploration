@@ -1,0 +1,10 @@
+{
+ "line": "Panc 03.27",
+ "model_id": "ACH-000139",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 63898696,
+ "bases": 6453768296,
+ "seconds": 252
+}

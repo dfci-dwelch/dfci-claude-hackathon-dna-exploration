@@ -1,0 +1,10 @@
+{
+ "line": "SNU-81",
+ "model_id": "ACH-000991",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 36314612,
+ "bases": 5466190483,
+ "seconds": 152
+}

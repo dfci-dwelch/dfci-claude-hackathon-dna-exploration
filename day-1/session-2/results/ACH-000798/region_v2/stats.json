@@ -1,0 +1,10 @@
+{
+ "line": "CL-40",
+ "model_id": "ACH-000798",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 36667495,
+ "bases": 5329090291,
+ "seconds": 168
+}

@@ -1,0 +1,10 @@
+{
+ "line": "SF268",
+ "model_id": "ACH-000655",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 48392222,
+ "bases": 7307225522,
+ "seconds": 114
+}

@@ -1,0 +1,10 @@
+{
+ "line": "Panc 10.05",
+ "model_id": "ACH-000060",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 43663452,
+ "bases": 4410008652,
+ "seconds": 191
+}

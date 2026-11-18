@@ -1,0 +1,10 @@
+{
+ "line": "YH-13",
+ "model_id": "ACH-000469",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 40227284,
+ "bases": 5857266564,
+ "seconds": 113
+}

@@ -1,0 +1,10 @@
+{
+ "line": "HSC-3",
+ "model_id": "ACH-000778",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 60395695,
+ "bases": 6099965195,
+ "seconds": 304
+}

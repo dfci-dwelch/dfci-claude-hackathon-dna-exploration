@@ -1,0 +1,10 @@
+{
+ "line": "LoVo",
+ "model_id": "ACH-000950",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 49921269,
+ "bases": 5042048169,
+ "seconds": 218
+}

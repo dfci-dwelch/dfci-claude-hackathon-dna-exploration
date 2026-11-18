@@ -1,0 +1,10 @@
+{
+ "line": "TE-10",
+ "model_id": "ACH-000318",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 30219928,
+ "bases": 4563209128,
+ "seconds": 115
+}

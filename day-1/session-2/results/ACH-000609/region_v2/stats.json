@@ -1,0 +1,10 @@
+{
+ "line": "SF126",
+ "model_id": "ACH-000609",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 38711972,
+ "bases": 5725187869,
+ "seconds": 89
+}

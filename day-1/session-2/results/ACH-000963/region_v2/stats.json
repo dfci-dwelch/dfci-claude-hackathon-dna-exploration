@@ -1,0 +1,10 @@
+{
+ "line": "CCK-81",
+ "model_id": "ACH-000963",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 61846718,
+ "bases": 6246518518,
+ "seconds": 215
+}

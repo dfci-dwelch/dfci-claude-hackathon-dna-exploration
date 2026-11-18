@@ -1,0 +1,101 @@
+n lines = 89  (with CN covariates: 85)
+
+Y arrays (P_ctrl-adjusted) by reported sex:
+sex                        female     male
+Y_DYZ1_HSat3_adj  count   55.0000  30.0000
+                  min      0.0002   0.0002
+                  median   0.0006   0.6009
+                  max      0.0018   2.1574
+Y_DYZ2_HSat1B_adj count   55.0000  30.0000
+                  min      0.0002   0.0003
+                  median   0.0009   0.2690
+                  max      0.0026   1.4982
+Y_DYZ3_aSat_adj   count   55.0000  30.0000
+                  min      0.0000   0.0000
+                  median   0.0001   0.7060
+                  max      0.0008   5.5225
+female max DYZ3: 0.0008 | male Y status: {'male_Y_present': 16, 'male_LOY(<0.2)': 14, 'male_no_CN': 2}
+males with LOY: ['A427', 'NCI-H2023', 'YH-13', 'GB-1', 'TE-10', 'RERF-GC-1B', 'GSS', 'COLO-678', 'SNU-81', 'Panc 10.05', 'Hs 766T', 'KP-4', 'BFTC-909', 'SW579']
+
+rDNA summaries (median [IQR]):
+  r45_raw        264.51 [215.50, 348.01]
+  r45_acro        26.99 [21.58, 34.35]
+  r5_raw         164.66 [130.94, 210.76]
+  r5_1q           76.97 [57.88, 89.46]
+  log2_5S_45S      1.49 [1.04, 2.05]
+
+CN correction matters? spearman(r45_raw, acro_CN*2/P_ctrl): [0.2295 0.0346]
+
+5S vs 45S spearman  raw: [0.0197 0.8543]  CN-corrected: [0.0248 0.8218]
+
+TP53 mutant vs WT (OLS adjusts lineage + sex; log2 scale):
+     metric  n_mut  n_wt  median_mut  median_wt  MWU_p  ols_log2_effect  ols_p
+   r45_acro     50    35     27.4201    25.2632 0.7854          -0.0245 0.8600
+      r5_1q     50    35     78.4799    75.8801 0.8970          -0.0335 0.8053
+log2_5S_45S     50    35      1.4661     1.5983 0.8970          -0.0090 0.9636
+    r45_raw     54    35    298.4212   250.6882 0.5651           0.0008 0.9954
+     r5_raw     54    35    167.7133   157.5246 0.8043          -0.0598 0.6841
+
+By lineage (medians):
+                      r45_acro  r5_1q  log2_5S_45S   n
+oncotree_lineage                                      
+Bone                     11.33  47.04         2.05   1
+Skin                     19.73  83.20         1.96   7
+Breast                   22.61  68.47         1.67   7
+Bowel                    23.07  74.26         1.76   7
+Ovary/Fallopian Tube     23.72  79.79         1.70   7
+Pancreas                 23.88  67.37         1.29   7
+Lymphoid                 24.17  88.75         1.82   7
+Lung                     27.38  86.58         1.68  11
+Kidney                   27.75  76.97         1.47   7
+Esophagus/Stomach        29.02  83.45         1.58   7
+Myeloid                  33.40  77.42         1.33   7
+Head and Neck            34.35  86.19         1.06   7
+CNS/Brain                36.65  51.39         0.74   7
+Kruskal r45_acro across lineages: [20.6581  0.0371]
+
+CRISPR: 88 lines with gene effect
+candidate genes (spearman rho, p):
+                 n                          p                         rho                
+metric log2_5S_45S r45_acro r5_1q log2_5S_45S r45_acro  r5_1q log2_5S_45S r45_acro  r5_1q
+gene                                                                                     
+FBL           84.0     84.0  84.0       0.614    0.316  0.819      -0.056    0.111  0.025
+GTF3C1        84.0     84.0  84.0       0.697    0.993  0.433      -0.043    0.001 -0.087
+MDM2          84.0     84.0  84.0       0.782    0.223  0.303      -0.031    0.134  0.114
+MYC           84.0     84.0  84.0       0.735    0.753  0.291       0.037   -0.035  0.117
+NCL           84.0     84.0  84.0       0.676    0.999  0.962      -0.046   -0.000 -0.005
+NOP56         84.0     84.0  84.0       0.417    0.574  0.325       0.090   -0.062  0.109
+POLR1A        84.0     84.0  84.0       0.371    0.505  0.474      -0.099    0.074 -0.079
+POLR1B        84.0     84.0  84.0       0.781    0.671  0.210      -0.031   -0.047 -0.138
+POLR1C        84.0     84.0  84.0       0.274    0.824  0.267       0.121   -0.025  0.122
+POLR1D        84.0     84.0  84.0       0.839    0.731  0.658      -0.023    0.038  0.049
+POLR3A        84.0     84.0  84.0       0.364    0.164  0.772      -0.100    0.153  0.032
+POLR3B        84.0     84.0  84.0       0.834    0.639  0.554       0.023   -0.052 -0.065
+RRN3          39.0     39.0  39.0       0.015    0.010  0.674       0.386   -0.408  0.070
+TAF1B         84.0     84.0  84.0       0.160    0.030  0.973       0.155   -0.236 -0.004
+TCOF1         84.0     84.0  84.0       0.554    0.871  0.804       0.065    0.018  0.028
+TP53          84.0     84.0  84.0       0.130    0.574  0.230       0.167   -0.062  0.132
+UBTF          84.0     84.0  84.0       0.313    0.108  0.629       0.111   -0.177  0.053
+
+genome-wide top hits per metric (q_BH):
+log2_5S_45S
+   gene  n     rho      p   q_BH
+  CLIP4 84 -0.4032 0.0001 0.9997
+  BRWD1 84 -0.3988 0.0002 0.9997
+HSD11B2 84  0.3921 0.0002 0.9997
+ RFPL4B 84  0.3876 0.0003 0.9997
+  MED31 84  0.3737 0.0005 0.9997
+r45_acro
+   gene  n     rho      p   q_BH
+ST3GAL1 84  0.4502 0.0000 0.2038
+ RFPL4B 84 -0.4365 0.0000 0.2038
+ PPHLN1 84  0.4359 0.0000 0.2038
+   MC3R 84 -0.4231 0.0001 0.2723
+  UQCC4 84  0.4140 0.0001 0.2970
+r5_1q
+   gene  n     rho      p   q_BH
+ S100A8 84  0.5542 0.0000 0.0008
+  CLIP4 84 -0.4413 0.0000 0.2376
+S100A12 84  0.4237 0.0001 0.3540
+ S100A4 84  0.4113 0.0001 0.4545
+  RPAP3 84  0.3984 0.0002 0.5090

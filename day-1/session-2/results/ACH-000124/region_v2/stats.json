@@ -1,0 +1,10 @@
+{
+ "line": "OCI-LY-19",
+ "model_id": "ACH-000124",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 38688935,
+ "bases": 5718640752,
+ "seconds": 93
+}

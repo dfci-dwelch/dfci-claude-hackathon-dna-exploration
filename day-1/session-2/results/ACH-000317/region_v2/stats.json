@@ -1,0 +1,10 @@
+{
+ "line": "TUHR14TKB",
+ "model_id": "ACH-000317",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 51719947,
+ "bases": 7809711997,
+ "seconds": 240
+}

@@ -1,0 +1,10 @@
+{
+ "line": "Raji",
+ "model_id": "ACH-000654",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 45040682,
+ "bases": 6801142982,
+ "seconds": 153
+}

@@ -1,0 +1,10 @@
+{
+ "line": "Hs 766T",
+ "model_id": "ACH-000178",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 39740458,
+ "bases": 5869090901,
+ "seconds": 100
+}

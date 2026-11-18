@@ -1,0 +1,10 @@
+{
+ "line": "GSS",
+ "model_id": "ACH-000746",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 35630323,
+ "bases": 5286472891,
+ "seconds": 89
+}

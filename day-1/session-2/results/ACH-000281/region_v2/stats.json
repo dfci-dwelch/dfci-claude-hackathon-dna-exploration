@@ -1,0 +1,10 @@
+{
+ "line": "KP-2",
+ "model_id": "ACH-000281",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 44377022,
+ "bases": 6700930322,
+ "seconds": 107
+}

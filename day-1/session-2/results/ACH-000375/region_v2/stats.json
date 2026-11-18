@@ -1,0 +1,10 @@
+{
+ "line": "G-402",
+ "model_id": "ACH-000375",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 49621059,
+ "bases": 5011726959,
+ "seconds": 197
+}

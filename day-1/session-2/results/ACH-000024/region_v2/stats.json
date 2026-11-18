@@ -1,0 +1,10 @@
+{
+ "line": "OPM-2",
+ "model_id": "ACH-000024",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 44374907,
+ "bases": 4481865607,
+ "seconds": 267
+}

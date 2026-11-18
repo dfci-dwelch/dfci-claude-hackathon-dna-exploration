@@ -1,0 +1,10 @@
+{
+ "line": "SK-MEL-2",
+ "model_id": "ACH-001190",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 58188120,
+ "bases": 5877000120,
+ "seconds": 202
+}

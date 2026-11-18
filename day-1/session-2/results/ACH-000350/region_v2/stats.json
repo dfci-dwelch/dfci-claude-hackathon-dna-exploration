@@ -1,0 +1,10 @@
+{
+ "line": "COLO-678",
+ "model_id": "ACH-000350",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 37565529,
+ "bases": 5298175814,
+ "seconds": 101
+}

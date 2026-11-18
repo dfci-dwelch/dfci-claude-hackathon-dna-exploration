@@ -1,0 +1,10 @@
+{
+ "line": "JURL-MK1",
+ "model_id": "ACH-000326",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 40139264,
+ "bases": 5943595476,
+ "seconds": 165
+}

@@ -1,0 +1,10 @@
+{
+ "line": "Detroit 562",
+ "model_id": "ACH-000207",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 48073118,
+ "bases": 4855384918,
+ "seconds": 195
+}

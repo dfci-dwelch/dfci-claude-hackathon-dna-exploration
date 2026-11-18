@@ -1,0 +1,10 @@
+{
+ "line": "MCF-7",
+ "model_id": "ACH-000019",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 47260250,
+ "bases": 4773285250,
+ "seconds": 199
+}

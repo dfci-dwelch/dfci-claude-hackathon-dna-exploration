@@ -1,0 +1,10 @@
+{
+ "line": "GB-1",
+ "model_id": "ACH-000738",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 73477224,
+ "bases": 7421199624,
+ "seconds": 251
+}

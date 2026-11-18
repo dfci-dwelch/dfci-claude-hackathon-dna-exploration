@@ -1,0 +1,10 @@
+{
+ "line": "NCO2",
+ "model_id": "ACH-000076",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 49139950,
+ "bases": 7420132450,
+ "seconds": 118
+}

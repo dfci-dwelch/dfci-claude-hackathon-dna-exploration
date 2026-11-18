@@ -103,10 +103,16 @@ def work(args):
         acc.reads += sub.reads; acc.bases += sub.bases
     if with_controls:
         for _, (c, s, e) in CONTROLS.iterrows():
-            b = n = 0
-            for r in f.fetch(c, s, e):
-                if r.flag & SKIP or r.is_unmapped or not (s <= r.reference_start < e): continue
-                b += r.query_alignment_length; n += 1
+            for attempt in range(4):  # transient 'truncated file' errors on remote reads: retry the window from scratch
+                try:
+                    b = n = 0
+                    for r in f.fetch(c, s, e):
+                        if r.flag & SKIP or r.is_unmapped or not (s <= r.reference_start < e): continue
+                        b += r.query_alignment_length; n += 1
+                    break
+                except OSError:
+                    if attempt == 3: raise
+                    time.sleep(10 * (attempt + 1)); f = open_aln(row)
             cov.append((c, s, e, n, b))
     return acc.tally, acc.reads, acc.bases, cov, time.time() - t0
 

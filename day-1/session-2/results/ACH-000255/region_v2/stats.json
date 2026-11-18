@@ -1,0 +1,10 @@
+{
+ "line": "LMSU",
+ "model_id": "ACH-000255",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 55146421,
+ "bases": 8201073755,
+ "seconds": 141
+}

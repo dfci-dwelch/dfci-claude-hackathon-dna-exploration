@@ -1,0 +1,10 @@
+{
+ "line": "HCC1806",
+ "model_id": "ACH-000624",
+ "sex": "female",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_v2.tsv",
+ "reads": 38432083,
+ "bases": 5803244533,
+ "seconds": 93
+}
