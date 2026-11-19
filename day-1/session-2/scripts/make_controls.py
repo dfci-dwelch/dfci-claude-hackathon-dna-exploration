@@ -1,4 +1,8 @@
-"""Pick 200 x 50kb single-copy-ish control windows on hg38 chr1-22: no N within 3 Mb, outside target regions."""
+"""Pick 200 x 50kb single-copy-ish control windows on hg38 chr1-22: no N within 3 Mb, outside v1 target regions.
+
+Windows are chosen against region list v1 (kept so the file used for all 89 lines is reproduced exactly).
+4 of the 200 overlap v2 regions; summarize.py drops windows that overlap v2 before taking the median depth.
+"""
 import numpy as np, pandas as pd, pysam
 fa = pysam.FastaFile("data/ref/Homo_sapiens_assembly38.fasta"); rng = np.random.default_rng(42)
 tgt = pd.read_csv("data/kmers/hg38_regions_v1.tsv", sep="\t")

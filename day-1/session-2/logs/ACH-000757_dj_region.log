@@ -1,0 +1,12 @@
+A427 ACH-000757 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=393 elapsed=1s
+  2/9 reads=110,567 elapsed=3s
+  3/9 reads=518,512 elapsed=4s
+  4/9 reads=864,191 elapsed=4s
+  5/9 reads=1,993,092 elapsed=5s
+  6/9 reads=2,078,098 elapsed=5s
+  7/9 reads=3,140,481 elapsed=7s
+  8/9 reads=3,490,133 elapsed=10s
+  9/9 reads=3,490,133 elapsed=64s
+done results/ACH-000757/dj_region 64s

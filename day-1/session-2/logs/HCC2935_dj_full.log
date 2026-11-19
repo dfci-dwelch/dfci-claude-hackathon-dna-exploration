@@ -1,0 +1,28 @@
+HCC2935 ACH-000150 full: 177 jobs
+  reusing 0 checkpointed jobs, 177 to run
+  10/177 reads=37,796,996 elapsed=45s
+  20/177 reads=83,827,144 elapsed=64s
+  30/177 reads=135,867,571 elapsed=89s
+  40/177 reads=176,872,382 elapsed=99s
+  50/177 reads=212,086,700 elapsed=128s
+  60/177 reads=258,999,928 elapsed=146s
+  70/177 reads=299,062,609 elapsed=168s
+  80/177 reads=341,616,107 elapsed=206s
+  90/177 reads=407,335,031 elapsed=219s
+  100/177 reads=452,223,274 elapsed=243s
+  110/177 reads=481,595,316 elapsed=252s
+  120/177 reads=515,372,288 elapsed=283s
+  130/177 reads=564,334,152 elapsed=309s
+  140/177 reads=615,117,450 elapsed=325s
+  150/177 reads=655,780,636 elapsed=345s
+  160/177 reads=687,151,583 elapsed=356s
+[W::hts_close] EOF marker is absent. The input is probably truncated
+OSError: [Errno 29] Closing failed: Illegal seek: 'https://depmap-omics-ccle.s3.amazonaws.com/data/wgs/cram/CDS-TgpQ6A.cram'
+Exception ignored in: 'pysam.libcalignmentfile.AlignmentFile.__dealloc__'
+Traceback (most recent call last):
+  File "/home/dwelch/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/concurrent/futures/process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+OSError: [Errno 29] Closing failed: Illegal seek: 'https://depmap-omics-ccle.s3.amazonaws.com/data/wgs/cram/CDS-TgpQ6A.cram'
+  170/177 reads=718,886,748 elapsed=428s
+  177/177 reads=730,066,885 elapsed=489s
+done results/ACH-000150/dj_full 490s

@@ -1,0 +1,12 @@
+Raji ACH-000654 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=168,988 elapsed=5s
+  3/9 reads=877,697 elapsed=5s
+  4/9 reads=974,081 elapsed=6s
+  5/9 reads=1,770,654 elapsed=8s
+  6/9 reads=3,416,995 elapsed=9s
+  7/9 reads=3,840,483 elapsed=11s
+  8/9 reads=5,602,693 elapsed=15s
+  9/9 reads=5,602,693 elapsed=68s
+done results/ACH-000654/dj_region 68s

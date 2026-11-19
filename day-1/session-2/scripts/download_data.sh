@@ -39,7 +39,7 @@ done
 
 # 4. DepMap 24Q4 Public from figshare (article 27993248); the portal itself is behind a Cloudflare check.
 #    Writes data/depmap/manifest.txt (name, url, md5) and verifies md5 for every file.
-FILES="Model.csv OmicsProfiles.csv OmicsDefaultModelProfiles.csv OmicsAbsoluteCNSegmentsProfile.csv OmicsSignatures.csv OmicsSomaticMutationsMatrixDamaging.csv OmicsSomaticMutationsMatrixHotspot.csv CRISPRGeneEffect.csv"
+FILES="AvanaGuideMap.csv KYGuideMap.csv HumagneGuideMap.csv CRISPRScreenMap.csv Model.csv OmicsProfiles.csv OmicsDefaultModelProfiles.csv OmicsAbsoluteCNSegmentsProfile.csv OmicsSignatures.csv OmicsSomaticMutationsMatrixDamaging.csv OmicsSomaticMutationsMatrixHotspot.csv CRISPRGeneEffect.csv"
 if [ ! -s data/depmap/manifest.txt ]; then
   curl -sS https://api.figshare.com/v2/articles/27993248 | FILES="$FILES" python3 -I -c '
 import json, os, sys

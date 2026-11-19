@@ -1,0 +1,19 @@
+{
+ "line": "HCC2935",
+ "model_id": "ACH-000150",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_dj.tsv",
+ "reads": 4202501,
+ "bases": 634577651,
+ "seconds": 63,
+ "code_version": "2026-11-19.2",
+ "input_fingerprint": [
+  "2026-11-19.2",
+  "dj",
+  "region",
+  "6992b63993eece6edde25e87589e8f29",
+  "10f5f1922276f66b2278eef5bee80222",
+  "73dd789ba2ff8d6f1b1690eb5c05ece6"
+ ]
+}

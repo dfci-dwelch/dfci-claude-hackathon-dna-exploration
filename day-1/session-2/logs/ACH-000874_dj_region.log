@@ -1,0 +1,12 @@
+RS4;11 ACH-000874 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=230,591 elapsed=6s
+  3/9 reads=759,587 elapsed=7s
+  4/9 reads=1,330,595 elapsed=7s
+  5/9 reads=2,697,431 elapsed=9s
+  6/9 reads=2,878,101 elapsed=10s
+  7/9 reads=3,417,948 elapsed=14s
+  8/9 reads=5,568,184 elapsed=19s
+  9/9 reads=5,568,184 elapsed=72s
+done results/ACH-000874/dj_region 72s

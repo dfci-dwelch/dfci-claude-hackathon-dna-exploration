@@ -1,0 +1,12 @@
+M-07e ACH-000602 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=131,630 elapsed=4s
+  3/9 reads=208,911 elapsed=5s
+  4/9 reads=630,076 elapsed=11s
+  5/9 reads=1,339,649 elapsed=12s
+  6/9 reads=1,988,546 elapsed=13s
+  7/9 reads=3,722,250 elapsed=20s
+  8/9 reads=5,954,876 elapsed=31s
+  9/9 reads=5,954,876 elapsed=71s
+done results/ACH-000602/dj_region 71s

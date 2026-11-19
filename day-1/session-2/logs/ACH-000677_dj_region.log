@@ -1,0 +1,12 @@
+SW 1573 ACH-000677 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=532 elapsed=1s
+  2/9 reads=330,006 elapsed=3s
+  3/9 reads=439,803 elapsed=4s
+  4/9 reads=751,315 elapsed=4s
+  5/9 reads=1,651,560 elapsed=5s
+  6/9 reads=1,735,996 elapsed=6s
+  7/9 reads=3,484,746 elapsed=8s
+  8/9 reads=3,795,718 elapsed=9s
+  9/9 reads=3,795,718 elapsed=62s
+done results/ACH-000677/dj_region 63s

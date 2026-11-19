@@ -10,7 +10,7 @@ reg = pd.read_csv(REGFILE, sep="\t")
 def in_reg(r):
     if r.contig == "*": return True
     s = reg[reg.contig == r.contig]
-    return ((s.start < (r.bin_Mb + 1) * 1e6) & (s.end > r.bin_Mb * 1e6)).any()
+    return ((s.start < (r.bin_Mb + 1) * 1e6) & (s.end > r.bin_Mb * 1e6)).any()  # approximate: any overlap credits the whole 1 Mb bin
 F["in_regions"] = F.apply(in_reg, axis=1)
 miss = F[~F.in_regions]
 print("\nhits in 1Mb bins outside region list, top per group:")

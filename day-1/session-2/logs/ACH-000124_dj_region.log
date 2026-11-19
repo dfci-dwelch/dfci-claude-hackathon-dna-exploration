@@ -1,0 +1,12 @@
+OCI-LY-19 ACH-000124 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=734 elapsed=1s
+  2/9 reads=144,736 elapsed=4s
+  3/9 reads=608,534 elapsed=5s
+  4/9 reads=1,051,029 elapsed=5s
+  5/9 reads=1,138,099 elapsed=6s
+  6/9 reads=2,258,424 elapsed=7s
+  7/9 reads=3,759,245 elapsed=8s
+  8/9 reads=4,168,153 elapsed=12s
+  9/9 reads=4,168,153 elapsed=65s
+done results/ACH-000124/dj_region 65s

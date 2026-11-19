@@ -1,0 +1,19 @@
+{
+ "line": "HCC2935",
+ "model_id": "ACH-000150",
+ "sex": "male",
+ "mode": "full",
+ "regions": null,
+ "reads": 730066885,
+ "bases": 110240099635,
+ "seconds": 490,
+ "code_version": "2026-11-19.2",
+ "input_fingerprint": [
+  "2026-11-19.2",
+  "dj",
+  "full",
+  "6992b63993eece6edde25e87589e8f29",
+  "10f5f1922276f66b2278eef5bee80222",
+  null
+ ]
+}

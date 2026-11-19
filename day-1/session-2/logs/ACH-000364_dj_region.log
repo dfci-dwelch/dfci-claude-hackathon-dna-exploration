@@ -1,0 +1,10 @@
+U-2 OS ACH-000364 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=3 elapsed=1s
+  2/9 reads=76,209 elapsed=3s
+  3/9 reads=115,904 elapsed=3s
+  4/9 reads=425,890 elapsed=5s
+  5/9 reads=696,000 elapsed=8s
+  6/9 reads=1,038,101 elapsed=9s
+  7/9 reads=1,796,811 elapsed=13s
+  8/9 reads=1,796,811 elapsed=107s

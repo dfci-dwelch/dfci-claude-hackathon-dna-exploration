@@ -1,0 +1,12 @@
+HOP-62 ACH-000861 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=304 elapsed=1s
+  2/9 reads=181,287 elapsed=2s
+  3/9 reads=231,834 elapsed=2s
+  4/9 reads=391,740 elapsed=2s
+  5/9 reads=421,312 elapsed=3s
+  6/9 reads=955,142 elapsed=3s
+  7/9 reads=1,171,974 elapsed=5s
+  8/9 reads=2,503,421 elapsed=9s
+  9/9 reads=2,503,421 elapsed=62s
+done results/ACH-000861/dj_region 63s

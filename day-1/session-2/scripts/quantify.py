@@ -10,7 +10,7 @@ A read is attributed to the chunk containing its reference_start, so overlapping
 double count. Placed-unmapped reads (mate mapped) are attributed to their mate's position.
 
 Outputs results/<model_id>/<mode>/: hits.tsv (group, contig, bin_1Mb, unmapped, hits),
-coverage.tsv (control window bases), kmer_counts.tsv (per-k-mer hits for rDNA groups), stats.json.
+coverage.tsv (control window reads, aligned bases, query bases), kmer_counts.tsv (per-k-mer hits for rDNA and DJ groups), stats.json.
 Output dir name = --outname (default: mode).
 """
 import sys, os, json, time, argparse, multiprocessing as mp
@@ -22,6 +22,7 @@ from kmerlib import encode, scan_hits, make_packed_bitmap
 HG38 = "data/ref/Homo_sapiens_assembly38.fasta"
 HTTP = "https://depmap-omics-ccle.s3.amazonaws.com/"
 BITS, BATCH_BASES, FULL_CHUNK = 27, 6_000_000, 20_000_000
+CODE_VERSION = "2026-11-19.3"  # .2: per-k-mer counts for DJ; .3: control query_bases (read length)  # bump when counting logic changes: invalidates checkpoints
 SKIP = 0x100 | 0x800 | 0x200
 
 # globals inherited by forked workers
@@ -35,19 +36,41 @@ def load_targets(tag):
     T, G, NAMES = d["kmer"][keep], d["group"][keep], list(d["group_names"])
     BM = make_packed_bitmap(T, BITS)
     global PERK
-    PERK = np.array([NAMES[g].startswith("rDNA") for g in G])
+    PERK = np.array([NAMES[g].startswith("rDNA") or NAMES[g] == "DJ" for g in G])  # groups with per-k-mer counts
     return d
+
+
+IDX_CACHE = "data/idx_cache"
+
+
+def local_index(row):
+    """Download the BAI/CRAI once into data/idx_cache/ and return its path. Passing a local index stops htslib
+    from saving a copy of the remote index into the current working directory."""
+    import urllib.request
+    url = row["crai_bai_url"].replace("s3://depmap-omics-ccle/", HTTP)
+    dest = os.path.join(IDX_CACHE, os.path.basename(url))
+    if not os.path.exists(dest):
+        os.makedirs(IDX_CACHE, exist_ok=True)
+        tmp = f"{dest}.{os.getpid()}.tmp"
+        urllib.request.urlretrieve(url, tmp)
+        os.replace(tmp, dest)
+    return dest
 
 
 def open_aln(row):
     u = row["cram_bam_url"].replace("s3://depmap-omics-ccle/", HTTP)
-    i = row["crai_bai_url"].replace("s3://depmap-omics-ccle/", HTTP)
+    i = row.get("_local_index") or local_index(row)
     for attempt in range(5):
         try:
             return pysam.AlignmentFile(u, index_filename=i, reference_filename=HG38)
-        except OSError:
+        except OSError as e:
+            err = e; log_retry("open", row["model_id"], attempt, e)
             time.sleep(5 * (attempt + 1))
-    raise
+    raise err
+
+
+def log_retry(what, where, attempt, err):
+    print(f"RETRY {what} {where} attempt={attempt + 1} error={err!r}", file=sys.stderr, flush=True)
 
 
 class Acc:
@@ -96,7 +119,8 @@ def work(args):
                     q = r.query_sequence
                     if q: sub.add(q, contig if contig != "*" else "*", p if contig != "*" else -1, r.is_unmapped)
                 sub.flush(); break
-            except OSError:
+            except OSError as err:  # not 'e': that is the region end
+                log_retry("fetch", f"{row['model_id']}:{contig}:{s}-{e}", attempt, err)
                 if attempt == 3: raise
                 time.sleep(10 * (attempt + 1)); f = open_aln(row)
         for k, v in sub.tally.items(): acc.tally[k] = acc.tally.get(k, 0) + v
@@ -105,15 +129,16 @@ def work(args):
         for _, (c, s, e) in CONTROLS.iterrows():
             for attempt in range(4):  # transient 'truncated file' errors on remote reads: retry the window from scratch
                 try:
-                    b = n = 0
+                    b = n = qb = 0
                     for r in f.fetch(c, s, e):
                         if r.flag & SKIP or r.is_unmapped or not (s <= r.reference_start < e): continue
-                        b += r.query_alignment_length; n += 1
+                        b += r.query_alignment_length; n += 1; qb += r.query_length
                     break
-                except OSError:
+                except OSError as err:
+                    log_retry("control", f"{row['model_id']}:{c}:{s}-{e}", attempt, err)
                     if attempt == 3: raise
                     time.sleep(10 * (attempt + 1)); f = open_aln(row)
-            cov.append((c, s, e, n, b))
+            cov.append((c, s, e, n, b, qb))
     return acc.tally, acc.reads, acc.bases, cov, time.time() - t0
 
 
@@ -146,6 +171,7 @@ def main():
     a = ap.parse_args()
     inv = pd.read_csv("data/meta/inventory.csv"); inv = inv[inv.datatype == "wgs"]
     row = inv[(inv.cell_line_name == a.line) | (inv.model_id == a.line)].iloc[0].to_dict()
+    row["_local_index"] = local_index(row)  # fetched once here, before workers fork
     load_targets(a.tag)
     CONTROLS = pd.read_csv("data/kmers/control_windows.tsv", sep="\t")
     out = f"results/{row['model_id']}/{a.outname or a.mode}"; os.makedirs(out, exist_ok=True)
@@ -159,11 +185,16 @@ def main():
     jobs.append((row, [], True))
     print(f"{row['cell_line_name']} {row['model_id']} {a.mode}: {len(jobs)} jobs", flush=True)
     tally, reads, bases, cov, t0 = {}, 0, 0, [], time.time()
-    # per-job checkpoints: a restarted run reuses finished jobs (keyed by job index + its units)
+    # per-job checkpoints: a restarted run reuses finished jobs. The key covers the job's units plus every
+    # input that changes its result (k-mer set, control windows, region file, tag, code version), so editing
+    # any of them can never silently reuse stale parts.
     import pickle, hashlib
     parts = f"{out}/parts"; os.makedirs(parts, exist_ok=True)
+    def fhash(path): return hashlib.md5(open(path, "rb").read()).hexdigest()
+    fp = (CODE_VERSION, a.tag, a.mode, fhash(f"data/kmers/kmers_{a.tag}.npz"), fhash("data/kmers/control_windows.tsv"),
+          fhash(a.regions) if a.mode == "region" else None)
     def ppath(i):
-        h = hashlib.md5(repr((jobs[i][1], jobs[i][2])).encode()).hexdigest()[:10]
+        h = hashlib.md5(repr((jobs[i][1], jobs[i][2], fp)).encode()).hexdigest()[:10]
         return f"{parts}/{i:04d}_{h}.pkl"
     results = {}
     for i in range(len(jobs)):
@@ -190,9 +221,9 @@ def main():
         .to_csv(f"{out}/kmer_counts.tsv", sep="\t", index=False)
     pd.DataFrame([k + (v,) for k, v in tally.items()], columns=["group", "contig", "bin_Mb", "unmapped", "hits"]) \
         .sort_values("hits", ascending=False).to_csv(f"{out}/hits.tsv", sep="\t", index=False)
-    pd.DataFrame(cov, columns=["contig", "start", "end", "reads", "aligned_bases"]).to_csv(f"{out}/coverage.tsv", sep="\t", index=False)
+    pd.DataFrame(cov, columns=["contig", "start", "end", "reads", "aligned_bases", "query_bases"]).to_csv(f"{out}/coverage.tsv", sep="\t", index=False)
     json.dump({"line": row["cell_line_name"], "model_id": row["model_id"], "sex": row["sex"], "mode": a.mode, "regions": a.regions if a.mode == "region" else None,
-               "reads": reads, "bases": bases, "seconds": round(time.time() - t0)}, open(f"{out}/stats.json", "w"), indent=1)
+               "reads": reads, "bases": bases, "seconds": round(time.time() - t0), "code_version": CODE_VERSION, "input_fingerprint": list(fp)}, open(f"{out}/stats.json", "w"), indent=1)
     print("done", out, f"{time.time()-t0:.0f}s", flush=True)
 
 
