@@ -99,7 +99,9 @@ print("\nTP53 loss vs intact (OLS adjusts lineage + sex + batch; log2 scale):");
 print("continuous p53 activity (p53_score = TP53 effect - MDM2 effect), spearman:")
 for c in ["r45_dj", "r45_acro", "r5_1q", "log2_5S_45S_dj"]:
     z = d.dropna(subset=[c, "p53_score"])
-    if len(z) < 10: continue; r_, p_ = stats.spearmanr(z.p53_score, z[c]); print(f"  {c:12s} rho={r_:+.3f} p={p_:.2g} n={len(z)}")
+    if len(z) < 10:
+        continue
+    r_, p_ = stats.spearmanr(z.p53_score, z[c]); print(f"  {c:12s} rho={r_:+.3f} p={p_:.2g} n={len(z)}")
 
 # --- by lineage ---
 lin = d.groupby("oncotree_lineage")[["r45_dj", "r45_acro", "r5_1q", "log2_5S_45S_dj"]].median().round(2)

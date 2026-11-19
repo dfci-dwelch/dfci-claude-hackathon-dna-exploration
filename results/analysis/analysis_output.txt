@@ -59,6 +59,10 @@ p53_loss    log2_5S_45S      56        29       1.2547         1.5410 0.7143    
 p53_loss        r45_raw      60        29     337.5055       291.4027 0.4385           0.0215 0.8794
 p53_loss         r5_raw      60        29     173.4160       177.8063 0.8166          -0.0516 0.7406
 continuous p53 activity (p53_score = TP53 effect - MDM2 effect), spearman:
+  r45_dj       rho=-0.224 p=0.036 n=88
+  r45_acro     rho=-0.072 p=0.51 n=84
+  r5_1q        rho=+0.057 p=0.61 n=84
+  log2_5S_45S_dj rho=+0.224 p=0.04 n=84
 
 By lineage (medians):
                       r45_dj  r45_acro  r5_1q  log2_5S_45S_dj   n
