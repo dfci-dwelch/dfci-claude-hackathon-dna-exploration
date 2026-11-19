@@ -1,0 +1,12 @@
+MV4-11 ACH-000045 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=108,898 elapsed=4s
+  3/9 reads=263,429 elapsed=5s
+  4/9 reads=761,043 elapsed=12s
+  5/9 reads=1,161,195 elapsed=13s
+  6/9 reads=1,610,852 elapsed=14s
+  7/9 reads=2,851,551 elapsed=18s
+  8/9 reads=2,851,551 elapsed=97s
+  9/9 reads=5,707,815 elapsed=114s
+done results/ACH-000045/dj_region 115s

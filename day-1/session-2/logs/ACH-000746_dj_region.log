@@ -1,0 +1,12 @@
+GSS ACH-000746 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=835 elapsed=1s
+  2/9 reads=136,708 elapsed=5s
+  3/9 reads=215,844 elapsed=5s
+  4/9 reads=772,139 elapsed=5s
+  5/9 reads=1,319,602 elapsed=6s
+  6/9 reads=1,688,243 elapsed=10s
+  7/9 reads=3,098,897 elapsed=10s
+  8/9 reads=5,628,767 elapsed=15s
+  9/9 reads=5,628,767 elapsed=64s
+done results/ACH-000746/dj_region 64s

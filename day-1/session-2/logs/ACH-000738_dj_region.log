@@ -1,0 +1,12 @@
+GB-1 ACH-000738 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1 elapsed=1s
+  2/9 reads=238,133 elapsed=5s
+  3/9 reads=380,402 elapsed=7s
+  4/9 reads=1,009,925 elapsed=14s
+  5/9 reads=2,255,795 elapsed=21s
+  6/9 reads=3,431,395 elapsed=24s
+  7/9 reads=6,609,602 elapsed=49s
+  8/9 reads=6,609,602 elapsed=101s
+  9/9 reads=11,988,728 elapsed=123s
+done results/ACH-000738/dj_region 123s

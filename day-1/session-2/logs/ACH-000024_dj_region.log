@@ -1,0 +1,12 @@
+OPM-2 ACH-000024 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=10 elapsed=1s
+  2/9 reads=87,215 elapsed=4s
+  3/9 reads=278,705 elapsed=5s
+  4/9 reads=449,611 elapsed=6s
+  5/9 reads=664,723 elapsed=8s
+  6/9 reads=1,145,540 elapsed=10s
+  7/9 reads=1,690,497 elapsed=13s
+  8/9 reads=1,690,497 elapsed=99s
+  9/9 reads=5,626,383 elapsed=211s
+done results/ACH-000024/dj_region 211s

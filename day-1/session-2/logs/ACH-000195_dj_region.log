@@ -1,0 +1,12 @@
+Set-2 ACH-000195 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1 elapsed=1s
+  2/9 reads=189,665 elapsed=6s
+  3/9 reads=337,068 elapsed=10s
+  4/9 reads=1,091,688 elapsed=17s
+  5/9 reads=1,767,036 elapsed=20s
+  6/9 reads=2,553,955 elapsed=21s
+  7/9 reads=4,294,666 elapsed=31s
+  8/9 reads=5,705,256 elapsed=43s
+  9/9 reads=5,705,256 elapsed=97s
+done results/ACH-000195/dj_region 97s

@@ -1,0 +1,12 @@
+LMSU ACH-000255 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1,162 elapsed=1s
+  2/9 reads=215,238 elapsed=7s
+  3/9 reads=330,802 elapsed=8s
+  4/9 reads=1,494,755 elapsed=8s
+  5/9 reads=3,692,298 elapsed=10s
+  6/9 reads=4,837,450 elapsed=12s
+  7/9 reads=5,366,901 elapsed=14s
+  8/9 reads=8,422,603 elapsed=17s
+  9/9 reads=8,422,603 elapsed=71s
+done results/ACH-000255/dj_region 72s

@@ -1,0 +1,12 @@
+Caov-3 ACH-000713 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=3 elapsed=1s
+  2/9 reads=204,234 elapsed=6s
+  3/9 reads=317,582 elapsed=7s
+  4/9 reads=855,602 elapsed=11s
+  5/9 reads=1,318,216 elapsed=14s
+  6/9 reads=1,745,363 elapsed=19s
+  7/9 reads=3,119,451 elapsed=28s
+  8/9 reads=3,119,451 elapsed=103s
+  9/9 reads=4,879,219 elapsed=138s
+done results/ACH-000713/dj_region 138s

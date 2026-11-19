@@ -1,0 +1,12 @@
+RERF-LC-Ad2 ACH-000774 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=330 elapsed=1s
+  2/9 reads=465,653 elapsed=3s
+  3/9 reads=863,893 elapsed=3s
+  4/9 reads=991,602 elapsed=4s
+  5/9 reads=1,074,051 elapsed=5s
+  6/9 reads=1,495,859 elapsed=6s
+  7/9 reads=2,518,335 elapsed=8s
+  8/9 reads=2,860,681 elapsed=9s
+  9/9 reads=2,860,681 elapsed=65s
+done results/ACH-000774/dj_region 66s

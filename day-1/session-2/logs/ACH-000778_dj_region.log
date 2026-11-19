@@ -1,0 +1,12 @@
+HSC-3 ACH-000778 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=3 elapsed=1s
+  2/9 reads=126,412 elapsed=5s
+  3/9 reads=354,721 elapsed=8s
+  4/9 reads=1,124,388 elapsed=15s
+  5/9 reads=1,681,180 elapsed=21s
+  6/9 reads=2,578,507 elapsed=22s
+  7/9 reads=4,833,665 elapsed=46s
+  8/9 reads=4,833,665 elapsed=103s
+  9/9 reads=10,799,999 elapsed=220s
+done results/ACH-000778/dj_region 221s

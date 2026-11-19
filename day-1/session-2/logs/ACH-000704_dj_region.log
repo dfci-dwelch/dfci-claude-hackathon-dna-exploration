@@ -1,0 +1,12 @@
+OAW42 ACH-000704 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=88,488 elapsed=4s
+  2/9 reads=260,693 elapsed=6s
+  3/9 reads=260,693 elapsed=6s
+  4/9 reads=835,460 elapsed=10s
+  5/9 reads=1,357,238 elapsed=11s
+  6/9 reads=1,740,745 elapsed=12s
+  7/9 reads=3,188,446 elapsed=18s
+  8/9 reads=3,188,446 elapsed=98s
+  9/9 reads=5,156,700 elapsed=102s
+done results/ACH-000704/dj_region 102s

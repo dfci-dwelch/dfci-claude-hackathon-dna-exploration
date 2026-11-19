@@ -1,0 +1,12 @@
+UOK101 ACH-000262 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=4 elapsed=1s
+  2/9 reads=427,404 elapsed=5s
+  3/9 reads=609,413 elapsed=5s
+  4/9 reads=1,105,153 elapsed=6s
+  5/9 reads=1,216,853 elapsed=7s
+  6/9 reads=2,449,668 elapsed=9s
+  7/9 reads=2,939,478 elapsed=14s
+  8/9 reads=4,834,854 elapsed=15s
+  9/9 reads=4,834,854 elapsed=69s
+done results/ACH-000262/dj_region 69s

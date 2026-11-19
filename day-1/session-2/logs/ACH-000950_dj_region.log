@@ -1,0 +1,12 @@
+LoVo ACH-000950 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=3 elapsed=1s
+  2/9 reads=77,892 elapsed=5s
+  3/9 reads=249,314 elapsed=8s
+  4/9 reads=818,156 elapsed=9s
+  5/9 reads=1,299,327 elapsed=12s
+  6/9 reads=1,884,228 elapsed=16s
+  7/9 reads=3,251,489 elapsed=26s
+  8/9 reads=3,251,489 elapsed=102s
+  9/9 reads=5,488,189 elapsed=133s
+done results/ACH-000950/dj_region 134s

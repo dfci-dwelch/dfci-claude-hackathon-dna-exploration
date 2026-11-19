@@ -1,0 +1,12 @@
+FU97 ACH-000633 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1 elapsed=1s
+  2/9 reads=184,952 elapsed=6s
+  3/9 reads=287,074 elapsed=7s
+  4/9 reads=848,359 elapsed=9s
+  5/9 reads=1,398,595 elapsed=12s
+  6/9 reads=1,898,397 elapsed=15s
+  7/9 reads=3,308,663 elapsed=26s
+  8/9 reads=3,308,663 elapsed=101s
+  9/9 reads=8,525,179 elapsed=204s
+done results/ACH-000633/dj_region 205s

@@ -1,0 +1,12 @@
+DK-MG ACH-000244 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=125,780 elapsed=3s
+  3/9 reads=209,311 elapsed=5s
+  4/9 reads=862,009 elapsed=6s
+  5/9 reads=1,390,396 elapsed=6s
+  6/9 reads=3,005,703 elapsed=9s
+  7/9 reads=3,365,857 elapsed=10s
+  8/9 reads=5,114,897 elapsed=15s
+  9/9 reads=5,114,897 elapsed=66s
+done results/ACH-000244/dj_region 66s

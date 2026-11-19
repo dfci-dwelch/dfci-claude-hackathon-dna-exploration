@@ -1,0 +1,12 @@
+COLO-678 ACH-000350 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=300 elapsed=1s
+  2/9 reads=124,837 elapsed=4s
+  3/9 reads=462,902 elapsed=4s
+  4/9 reads=1,420,249 elapsed=5s
+  5/9 reads=1,741,908 elapsed=6s
+  6/9 reads=1,823,657 elapsed=6s
+  7/9 reads=2,158,239 elapsed=10s
+  8/9 reads=6,429,876 elapsed=17s
+  9/9 reads=6,429,876 elapsed=63s
+done results/ACH-000350/dj_region 64s

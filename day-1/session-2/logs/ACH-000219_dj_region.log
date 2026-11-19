@@ -1,0 +1,12 @@
+A-375 ACH-000219 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=14 elapsed=1s
+  2/9 reads=158,778 elapsed=4s
+  3/9 reads=239,589 elapsed=6s
+  4/9 reads=688,869 elapsed=11s
+  5/9 reads=1,203,813 elapsed=12s
+  6/9 reads=1,834,191 elapsed=13s
+  7/9 reads=3,363,456 elapsed=34s
+  8/9 reads=3,363,456 elapsed=103s
+  9/9 reads=13,450,828 elapsed=249s
+done results/ACH-000219/dj_region 250s

@@ -1,0 +1,12 @@
+SK-MEL-2 ACH-001190 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=104,301 elapsed=5s
+  3/9 reads=293,310 elapsed=7s
+  4/9 reads=765,919 elapsed=15s
+  5/9 reads=1,505,725 elapsed=15s
+  6/9 reads=2,325,526 elapsed=17s
+  7/9 reads=4,132,531 elapsed=26s
+  8/9 reads=4,132,531 elapsed=97s
+  9/9 reads=6,794,929 elapsed=112s
+done results/ACH-001190/dj_region 112s

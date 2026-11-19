@@ -1,0 +1,12 @@
+YH-13 ACH-000469 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=580 elapsed=1s
+  2/9 reads=123,889 elapsed=4s
+  3/9 reads=212,069 elapsed=6s
+  4/9 reads=1,143,551 elapsed=7s
+  5/9 reads=1,929,220 elapsed=8s
+  6/9 reads=2,320,719 elapsed=11s
+  7/9 reads=4,793,723 elapsed=12s
+  8/9 reads=7,708,070 elapsed=15s
+  9/9 reads=7,708,070 elapsed=64s
+done results/ACH-000469/dj_region 64s

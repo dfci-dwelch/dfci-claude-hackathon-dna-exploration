@@ -1,0 +1,12 @@
+KPL-1 ACH-000028 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=90 elapsed=1s
+  2/9 reads=484,974 elapsed=5s
+  3/9 reads=1,779,317 elapsed=5s
+  4/9 reads=1,869,277 elapsed=6s
+  5/9 reads=2,540,474 elapsed=6s
+  6/9 reads=2,672,298 elapsed=8s
+  7/9 reads=4,491,282 elapsed=9s
+  8/9 reads=4,864,971 elapsed=10s
+  9/9 reads=4,864,971 elapsed=69s
+done results/ACH-000028/dj_region 69s

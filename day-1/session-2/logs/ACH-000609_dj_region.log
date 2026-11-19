@@ -1,0 +1,12 @@
+SF126 ACH-000609 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=431 elapsed=1s
+  2/9 reads=97,612 elapsed=3s
+  3/9 reads=493,949 elapsed=3s
+  4/9 reads=556,771 elapsed=5s
+  5/9 reads=965,407 elapsed=5s
+  6/9 reads=2,051,788 elapsed=6s
+  7/9 reads=2,461,325 elapsed=8s
+  8/9 reads=3,902,486 elapsed=10s
+  9/9 reads=3,902,486 elapsed=62s
+done results/ACH-000609/dj_region 63s

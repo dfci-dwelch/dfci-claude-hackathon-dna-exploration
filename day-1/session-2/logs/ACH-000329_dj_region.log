@@ -1,0 +1,12 @@
+CCF-STTG1 ACH-000329 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1,153 elapsed=1s
+  2/9 reads=196,149 elapsed=5s
+  3/9 reads=766,954 elapsed=6s
+  4/9 reads=1,317,494 elapsed=7s
+  5/9 reads=2,796,032 elapsed=7s
+  6/9 reads=2,913,023 elapsed=8s
+  7/9 reads=4,446,243 elapsed=12s
+  8/9 reads=4,919,379 elapsed=14s
+  9/9 reads=4,919,379 elapsed=67s
+done results/ACH-000329/dj_region 67s

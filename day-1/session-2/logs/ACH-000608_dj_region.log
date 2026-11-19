@@ -1,0 +1,12 @@
+COV644 ACH-000608 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=284,058 elapsed=3s
+  3/9 reads=341,186 elapsed=5s
+  4/9 reads=459,645 elapsed=5s
+  5/9 reads=852,724 elapsed=10s
+  6/9 reads=1,191,309 elapsed=11s
+  7/9 reads=1,864,846 elapsed=12s
+  8/9 reads=1,864,846 elapsed=95s
+  9/9 reads=4,205,016 elapsed=111s
+done results/ACH-000608/dj_region 111s

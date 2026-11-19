@@ -1,0 +1,12 @@
+T-47D ACH-000147 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1 elapsed=1s
+  2/9 reads=342,351 elapsed=4s
+  3/9 reads=435,465 elapsed=6s
+  4/9 reads=614,679 elapsed=6s
+  5/9 reads=959,002 elapsed=11s
+  6/9 reads=1,497,489 elapsed=13s
+  7/9 reads=2,334,128 elapsed=15s
+  8/9 reads=2,334,128 elapsed=95s
+  9/9 reads=4,317,612 elapsed=137s
+done results/ACH-000147/dj_region 138s

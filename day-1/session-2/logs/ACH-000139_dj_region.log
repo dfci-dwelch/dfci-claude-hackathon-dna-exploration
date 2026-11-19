@@ -1,0 +1,12 @@
+Panc 03.27 ACH-000139 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=286,682 elapsed=6s
+  3/9 reads=448,270 elapsed=7s
+  4/9 reads=1,380,289 elapsed=19s
+  5/9 reads=2,072,892 elapsed=24s
+  6/9 reads=3,047,014 elapsed=24s
+  7/9 reads=5,407,104 elapsed=41s
+  8/9 reads=5,407,104 elapsed=107s
+  9/9 reads=10,210,690 elapsed=160s
+done results/ACH-000139/dj_region 160s

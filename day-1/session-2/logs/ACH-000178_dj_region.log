@@ -1,0 +1,12 @@
+Hs 766T ACH-000178 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=494 elapsed=1s
+  2/9 reads=319,236 elapsed=3s
+  3/9 reads=436,753 elapsed=4s
+  4/9 reads=841,976 elapsed=5s
+  5/9 reads=923,667 elapsed=5s
+  6/9 reads=1,747,361 elapsed=7s
+  7/9 reads=3,239,078 elapsed=8s
+  8/9 reads=3,590,584 elapsed=10s
+  9/9 reads=3,590,584 elapsed=70s
+done results/ACH-000178/dj_region 70s

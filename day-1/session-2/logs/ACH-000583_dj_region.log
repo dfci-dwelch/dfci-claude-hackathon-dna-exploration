@@ -1,0 +1,12 @@
+MC116 ACH-000583 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1 elapsed=1s
+  2/9 reads=236,633 elapsed=6s
+  3/9 reads=742,355 elapsed=7s
+  4/9 reads=1,314,051 elapsed=7s
+  5/9 reads=1,457,316 elapsed=9s
+  6/9 reads=2,806,186 elapsed=10s
+  7/9 reads=4,837,462 elapsed=15s
+  8/9 reads=5,489,859 elapsed=17s
+  9/9 reads=5,489,859 elapsed=69s
+done results/ACH-000583/dj_region 69s

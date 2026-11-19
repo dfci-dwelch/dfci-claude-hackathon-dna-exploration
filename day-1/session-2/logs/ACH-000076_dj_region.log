@@ -1,0 +1,12 @@
+NCO2 ACH-000076 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=162,008 elapsed=4s
+  3/9 reads=815,275 elapsed=5s
+  4/9 reads=1,447,358 elapsed=6s
+  5/9 reads=1,569,901 elapsed=7s
+  6/9 reads=3,195,311 elapsed=12s
+  7/9 reads=3,684,356 elapsed=13s
+  8/9 reads=5,748,280 elapsed=18s
+  9/9 reads=5,748,280 elapsed=72s
+done results/ACH-000076/dj_region 72s

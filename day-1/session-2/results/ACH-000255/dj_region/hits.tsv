@@ -1,0 +1,14 @@
+group	contig	bin_Mb	unmapped	hits
+DJ	chrUn_GL000195v1	0	False	10111233
+DJ	chr21	7	False	8508578
+DJ	chr17_GL000205v2_random	0	False	8327628
+DJ	chr21	6	False	7359293
+DJ	chr21	5	False	6671175
+DJ	chr22_KI270733v1_random	0	False	6173936
+DJ	chrUn_GL000220v1	0	False	4971980
+DJ	chr21	8	False	4534308
+DJ	chrUn_JTFH01000920v1_decoy	0	False	108523
+DJ	chr21	5	True	110
+DJ	chr21	6	True	55
+DJ	*	-1	True	43
+DJ	chr21	7	True	2

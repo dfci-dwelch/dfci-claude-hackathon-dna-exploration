@@ -1,0 +1,12 @@
+G-402 ACH-000375 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=2 elapsed=1s
+  2/9 reads=175,662 elapsed=5s
+  3/9 reads=284,585 elapsed=6s
+  4/9 reads=956,575 elapsed=10s
+  5/9 reads=1,400,070 elapsed=12s
+  6/9 reads=2,190,895 elapsed=15s
+  7/9 reads=4,125,677 elapsed=29s
+  8/9 reads=4,125,677 elapsed=98s
+  9/9 reads=7,288,691 elapsed=116s
+done results/ACH-000375/dj_region 116s

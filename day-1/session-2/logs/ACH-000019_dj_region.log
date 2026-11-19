@@ -1,0 +1,12 @@
+MCF-7 ACH-000019 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=176,942 elapsed=6s
+  3/9 reads=285,591 elapsed=8s
+  4/9 reads=787,007 elapsed=15s
+  5/9 reads=1,490,264 elapsed=18s
+  6/9 reads=2,395,602 elapsed=20s
+  7/9 reads=4,694,896 elapsed=29s
+  8/9 reads=4,694,896 elapsed=99s
+  9/9 reads=7,317,066 elapsed=151s
+done results/ACH-000019/dj_region 152s

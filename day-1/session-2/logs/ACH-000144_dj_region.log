@@ -1,0 +1,12 @@
+RERF-GC-1B ACH-000144 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=7 elapsed=1s
+  2/9 reads=68,011 elapsed=4s
+  3/9 reads=188,872 elapsed=4s
+  4/9 reads=585,891 elapsed=5s
+  5/9 reads=910,389 elapsed=8s
+  6/9 reads=1,236,177 elapsed=12s
+  7/9 reads=2,221,163 elapsed=22s
+  8/9 reads=2,221,163 elapsed=103s
+  9/9 reads=10,079,779 elapsed=172s
+done results/ACH-000144/dj_region 173s

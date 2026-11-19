@@ -1,0 +1,12 @@
+NCI-H841 ACH-000292 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1 elapsed=1s
+  2/9 reads=105,749 elapsed=3s
+  3/9 reads=170,758 elapsed=5s
+  4/9 reads=515,631 elapsed=9s
+  5/9 reads=984,558 elapsed=10s
+  6/9 reads=1,384,396 elapsed=14s
+  7/9 reads=2,211,064 elapsed=17s
+  8/9 reads=2,211,064 elapsed=96s
+  9/9 reads=4,227,418 elapsed=182s
+done results/ACH-000292/dj_region 183s

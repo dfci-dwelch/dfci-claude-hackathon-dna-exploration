@@ -1,0 +1,12 @@
+RPMI-7951 ACH-000348 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=115,529 elapsed=4s
+  3/9 reads=379,423 elapsed=5s
+  4/9 reads=449,161 elapsed=5s
+  5/9 reads=788,826 elapsed=6s
+  6/9 reads=1,116,040 elapsed=11s
+  7/9 reads=1,945,269 elapsed=12s
+  8/9 reads=1,945,269 elapsed=93s
+  9/9 reads=4,309,935 elapsed=94s
+done results/ACH-000348/dj_region 94s

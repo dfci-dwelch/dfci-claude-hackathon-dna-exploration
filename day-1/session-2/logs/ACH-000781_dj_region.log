@@ -1,0 +1,12 @@
+NCI-H2023 ACH-000781 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=123,152 elapsed=4s
+  3/9 reads=715,324 elapsed=4s
+  4/9 reads=799,352 elapsed=5s
+  5/9 reads=1,411,887 elapsed=6s
+  6/9 reads=1,791,255 elapsed=10s
+  7/9 reads=3,192,575 elapsed=13s
+  8/9 reads=6,091,653 elapsed=22s
+  9/9 reads=6,091,653 elapsed=66s
+done results/ACH-000781/dj_region 66s

@@ -1,0 +1,12 @@
+AGS ACH-000880 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=5 elapsed=1s
+  2/9 reads=101,669 elapsed=8s
+  3/9 reads=307,388 elapsed=8s
+  4/9 reads=1,024,017 elapsed=15s
+  5/9 reads=1,696,845 elapsed=17s
+  6/9 reads=2,271,552 elapsed=21s
+  7/9 reads=4,053,306 elapsed=30s
+  8/9 reads=4,053,306 elapsed=106s
+  9/9 reads=12,132,654 elapsed=207s
+done results/ACH-000880/dj_region 207s

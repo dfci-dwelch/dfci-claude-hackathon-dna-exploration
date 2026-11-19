@@ -1,0 +1,12 @@
+SK-RC-52 ACH-000385 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=130 elapsed=1s
+  2/9 reads=122,972 elapsed=4s
+  3/9 reads=580,773 elapsed=4s
+  4/9 reads=923,167 elapsed=5s
+  5/9 reads=1,004,388 elapsed=6s
+  6/9 reads=2,327,767 elapsed=8s
+  7/9 reads=2,785,237 elapsed=12s
+  8/9 reads=6,982,073 elapsed=17s
+  9/9 reads=6,982,073 elapsed=64s
+done results/ACH-000385/dj_region 65s

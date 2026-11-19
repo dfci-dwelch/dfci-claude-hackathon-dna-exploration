@@ -1,0 +1,12 @@
+AU565 ACH-000248 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=2 elapsed=1s
+  2/9 reads=88,040 elapsed=4s
+  3/9 reads=258,129 elapsed=7s
+  4/9 reads=948,942 elapsed=13s
+  5/9 reads=1,458,039 elapsed=15s
+  6/9 reads=2,063,429 elapsed=18s
+  7/9 reads=3,787,905 elapsed=29s
+  8/9 reads=3,787,905 elapsed=106s
+  9/9 reads=5,856,943 elapsed=136s
+done results/ACH-000248/dj_region 136s

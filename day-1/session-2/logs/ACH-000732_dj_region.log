@@ -1,0 +1,12 @@
+PE/CA-PJ41 (clone D2) ACH-000732 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=3 elapsed=1s
+  2/9 reads=221,768 elapsed=6s
+  3/9 reads=313,028 elapsed=6s
+  4/9 reads=1,713,450 elapsed=11s
+  5/9 reads=2,934,648 elapsed=11s
+  6/9 reads=3,378,048 elapsed=13s
+  7/9 reads=6,840,771 elapsed=20s
+  8/9 reads=8,856,637 elapsed=23s
+  9/9 reads=8,856,637 elapsed=67s
+done results/ACH-000732/dj_region 67s

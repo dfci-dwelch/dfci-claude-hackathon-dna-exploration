@@ -1,0 +1,12 @@
+KP-2 ACH-000281 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=180,585 elapsed=5s
+  3/9 reads=723,321 elapsed=5s
+  4/9 reads=1,236,951 elapsed=6s
+  5/9 reads=1,342,196 elapsed=6s
+  6/9 reads=2,675,381 elapsed=10s
+  7/9 reads=3,120,439 elapsed=12s
+  8/9 reads=4,356,303 elapsed=13s
+  9/9 reads=4,356,303 elapsed=70s
+done results/ACH-000281/dj_region 70s

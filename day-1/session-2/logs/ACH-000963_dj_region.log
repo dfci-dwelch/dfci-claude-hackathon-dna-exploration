@@ -1,0 +1,12 @@
+CCK-81 ACH-000963 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=3 elapsed=1s
+  2/9 reads=146,223 elapsed=7s
+  3/9 reads=627,980 elapsed=8s
+  4/9 reads=873,281 elapsed=9s
+  5/9 reads=1,345,872 elapsed=12s
+  6/9 reads=2,509,671 elapsed=19s
+  7/9 reads=3,199,822 elapsed=19s
+  8/9 reads=3,199,822 elapsed=102s
+  9/9 reads=7,209,586 elapsed=121s
+done results/ACH-000963/dj_region 122s

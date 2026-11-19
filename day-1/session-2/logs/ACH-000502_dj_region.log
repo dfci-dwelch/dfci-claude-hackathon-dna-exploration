@@ -1,0 +1,12 @@
+TCC-PAN2 ACH-000502 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=616 elapsed=1s
+  2/9 reads=371,416 elapsed=3s
+  3/9 reads=420,681 elapsed=3s
+  4/9 reads=506,047 elapsed=4s
+  5/9 reads=827,366 elapsed=4s
+  6/9 reads=1,710,819 elapsed=6s
+  7/9 reads=1,902,183 elapsed=7s
+  8/9 reads=3,849,825 elapsed=16s
+  9/9 reads=3,849,825 elapsed=67s
+done results/ACH-000502/dj_region 67s

@@ -1,0 +1,12 @@
+YD-8 ACH-000630 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=476 elapsed=1s
+  2/9 reads=98,334 elapsed=3s
+  3/9 reads=560,310 elapsed=4s
+  4/9 reads=625,275 elapsed=4s
+  5/9 reads=1,011,394 elapsed=5s
+  6/9 reads=1,324,600 elapsed=8s
+  7/9 reads=2,428,674 elapsed=8s
+  8/9 reads=3,679,772 elapsed=8s
+  9/9 reads=3,679,772 elapsed=64s
+done results/ACH-000630/dj_region 65s

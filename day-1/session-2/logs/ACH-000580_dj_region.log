@@ -1,0 +1,12 @@
+C32 ACH-000580 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=146,814 elapsed=6s
+  3/9 reads=215,519 elapsed=8s
+  4/9 reads=567,064 elapsed=9s
+  5/9 reads=931,549 elapsed=14s
+  6/9 reads=1,320,799 elapsed=16s
+  7/9 reads=2,179,315 elapsed=25s
+  8/9 reads=4,099,739 elapsed=60s
+  9/9 reads=4,099,739 elapsed=98s
+done results/ACH-000580/dj_region 99s

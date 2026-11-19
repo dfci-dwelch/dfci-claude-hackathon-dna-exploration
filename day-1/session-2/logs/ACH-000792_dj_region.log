@@ -1,0 +1,12 @@
+BFTC-909 ACH-000792 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=179,129 elapsed=4s
+  3/9 reads=278,701 elapsed=7s
+  4/9 reads=752,646 elapsed=12s
+  5/9 reads=1,369,230 elapsed=14s
+  6/9 reads=1,869,631 elapsed=19s
+  7/9 reads=3,454,376 elapsed=28s
+  8/9 reads=3,454,376 elapsed=106s
+  9/9 reads=6,941,648 elapsed=124s
+done results/ACH-000792/dj_region 124s

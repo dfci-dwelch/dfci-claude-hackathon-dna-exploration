@@ -1,0 +1,12 @@
+786-O ACH-000649 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=4 elapsed=1s
+  2/9 reads=94,839 elapsed=5s
+  3/9 reads=248,501 elapsed=6s
+  4/9 reads=702,656 elapsed=11s
+  5/9 reads=1,277,714 elapsed=17s
+  6/9 reads=1,736,308 elapsed=17s
+  7/9 reads=3,183,046 elapsed=38s
+  8/9 reads=3,183,046 elapsed=103s
+  9/9 reads=10,195,590 elapsed=295s
+done results/ACH-000649/dj_region 295s

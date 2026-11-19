@@ -1,0 +1,12 @@
+SNU-16 ACH-000581 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=2 elapsed=1s
+  2/9 reads=112,736 elapsed=8s
+  3/9 reads=294,432 elapsed=8s
+  4/9 reads=1,256,648 elapsed=23s
+  5/9 reads=1,895,720 elapsed=26s
+  6/9 reads=2,958,766 elapsed=26s
+  7/9 reads=5,769,199 elapsed=55s
+  8/9 reads=5,769,199 elapsed=115s
+  9/9 reads=11,931,501 elapsed=220s
+done results/ACH-000581/dj_region 220s

@@ -1,0 +1,12 @@
+CL-40 ACH-000798 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=155,787 elapsed=6s
+  3/9 reads=249,201 elapsed=7s
+  4/9 reads=629,723 elapsed=13s
+  5/9 reads=3,011,838 elapsed=13s
+  6/9 reads=3,697,957 elapsed=15s
+  7/9 reads=4,344,648 elapsed=17s
+  8/9 reads=5,904,944 elapsed=28s
+  9/9 reads=5,904,944 elapsed=95s
+done results/ACH-000798/dj_region 96s

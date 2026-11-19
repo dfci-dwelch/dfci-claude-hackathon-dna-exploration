@@ -1,0 +1,12 @@
+NCI-H2286 ACH-000912 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=166,099 elapsed=4s
+  2/9 reads=166,101 elapsed=6s
+  3/9 reads=275,089 elapsed=7s
+  4/9 reads=894,651 elapsed=12s
+  5/9 reads=1,462,493 elapsed=16s
+  6/9 reads=2,229,620 elapsed=17s
+  7/9 reads=4,126,745 elapsed=29s
+  8/9 reads=4,126,745 elapsed=105s
+  9/9 reads=9,217,493 elapsed=172s
+done results/ACH-000912/dj_region 172s

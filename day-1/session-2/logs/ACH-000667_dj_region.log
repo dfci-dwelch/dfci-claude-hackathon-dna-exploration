@@ -1,0 +1,12 @@
+HCC-44 ACH-000667 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=9 elapsed=1s
+  2/9 reads=107,107 elapsed=7s
+  3/9 reads=327,662 elapsed=8s
+  4/9 reads=1,255,524 elapsed=12s
+  5/9 reads=1,963,821 elapsed=14s
+  6/9 reads=2,614,126 elapsed=17s
+  7/9 reads=4,893,850 elapsed=47s
+  8/9 reads=4,893,850 elapsed=110s
+  9/9 reads=9,507,704 elapsed=210s
+done results/ACH-000667/dj_region 210s

@@ -1,0 +1,12 @@
+HCC1954 ACH-000859 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=2 elapsed=1s
+  2/9 reads=59,166 elapsed=5s
+  3/9 reads=173,408 elapsed=6s
+  4/9 reads=471,205 elapsed=8s
+  5/9 reads=888,994 elapsed=9s
+  6/9 reads=1,283,136 elapsed=11s
+  7/9 reads=2,295,656 elapsed=14s
+  8/9 reads=2,295,656 elapsed=95s
+  9/9 reads=4,222,866 elapsed=111s
+done results/ACH-000859/dj_region 111s

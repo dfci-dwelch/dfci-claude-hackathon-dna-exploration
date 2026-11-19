@@ -1,0 +1,12 @@
+HCC1806 ACH-000624 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=106,887 elapsed=3s
+  3/9 reads=657,702 elapsed=4s
+  4/9 reads=947,352 elapsed=4s
+  5/9 reads=1,016,503 elapsed=5s
+  6/9 reads=1,380,900 elapsed=5s
+  7/9 reads=1,619,475 elapsed=8s
+  8/9 reads=2,825,121 elapsed=11s
+  9/9 reads=2,825,121 elapsed=67s
+done results/ACH-000624/dj_region 68s

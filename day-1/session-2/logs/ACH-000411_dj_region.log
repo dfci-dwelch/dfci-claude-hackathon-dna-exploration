@@ -1,0 +1,12 @@
+769-P ACH-000411 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=2 elapsed=1s
+  2/9 reads=94,947 elapsed=5s
+  3/9 reads=264,560 elapsed=5s
+  4/9 reads=697,301 elapsed=8s
+  5/9 reads=1,202,013 elapsed=11s
+  6/9 reads=1,643,211 elapsed=15s
+  7/9 reads=2,870,148 elapsed=17s
+  8/9 reads=2,870,148 elapsed=97s
+  9/9 reads=4,806,306 elapsed=116s
+done results/ACH-000411/dj_region 116s

@@ -1,0 +1,12 @@
+HT-29 ACH-000552 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1 elapsed=1s
+  2/9 reads=165,393 elapsed=5s
+  3/9 reads=279,661 elapsed=7s
+  4/9 reads=677,553 elapsed=14s
+  5/9 reads=1,442,087 elapsed=15s
+  6/9 reads=2,145,225 elapsed=15s
+  7/9 reads=3,977,725 elapsed=33s
+  8/9 reads=3,977,725 elapsed=101s
+  9/9 reads=8,744,019 elapsed=155s
+done results/ACH-000552/dj_region 155s

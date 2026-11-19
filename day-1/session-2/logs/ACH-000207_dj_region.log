@@ -1,0 +1,12 @@
+Detroit 562 ACH-000207 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=2 elapsed=1s
+  2/9 reads=89,885 elapsed=4s
+  3/9 reads=476,848 elapsed=6s
+  4/9 reads=626,957 elapsed=7s
+  5/9 reads=1,019,629 elapsed=11s
+  6/9 reads=1,544,188 elapsed=14s
+  7/9 reads=2,800,063 elapsed=24s
+  8/9 reads=2,800,063 elapsed=97s
+  9/9 reads=5,223,071 elapsed=150s
+done results/ACH-000207/dj_region 150s

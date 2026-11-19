@@ -1,0 +1,12 @@
+SW1463 ACH-000470 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=99,587 elapsed=3s
+  3/9 reads=538,585 elapsed=4s
+  4/9 reads=988,264 elapsed=4s
+  5/9 reads=1,054,583 elapsed=4s
+  6/9 reads=2,134,203 elapsed=6s
+  7/9 reads=2,394,785 elapsed=7s
+  8/9 reads=3,709,195 elapsed=12s
+  9/9 reads=3,709,195 elapsed=65s
+done results/ACH-000470/dj_region 66s

@@ -1,0 +1,12 @@
+SF268 ACH-000655 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=117,598 elapsed=4s
+  3/9 reads=182,114 elapsed=5s
+  4/9 reads=971,228 elapsed=7s
+  5/9 reads=1,792,669 elapsed=7s
+  6/9 reads=2,182,475 elapsed=10s
+  7/9 reads=4,202,064 elapsed=10s
+  8/9 reads=6,256,134 elapsed=15s
+  9/9 reads=6,256,134 elapsed=68s
+done results/ACH-000655/dj_region 69s

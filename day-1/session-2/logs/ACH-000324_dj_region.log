@@ -1,0 +1,12 @@
+JHOC-5 ACH-000324 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=129,924 elapsed=2s
+  3/9 reads=234,289 elapsed=3s
+  4/9 reads=407,965 elapsed=3s
+  5/9 reads=740,671 elapsed=4s
+  6/9 reads=814,244 elapsed=5s
+  7/9 reads=1,087,509 elapsed=8s
+  8/9 reads=2,321,845 elapsed=12s
+  9/9 reads=2,321,845 elapsed=63s
+done results/ACH-000324/dj_region 63s

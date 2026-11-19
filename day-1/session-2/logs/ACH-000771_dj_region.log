@@ -1,0 +1,12 @@
+BICR 56 ACH-000771 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=1 elapsed=1s
+  2/9 reads=177,343 elapsed=5s
+  3/9 reads=890,808 elapsed=7s
+  4/9 reads=998,084 elapsed=7s
+  5/9 reads=1,843,271 elapsed=9s
+  6/9 reads=2,298,494 elapsed=14s
+  7/9 reads=4,359,041 elapsed=14s
+  8/9 reads=5,881,141 elapsed=16s
+  9/9 reads=5,881,141 elapsed=66s
+done results/ACH-000771/dj_region 66s

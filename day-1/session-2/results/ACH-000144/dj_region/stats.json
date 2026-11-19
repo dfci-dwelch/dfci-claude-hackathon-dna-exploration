@@ -1,0 +1,19 @@
+{
+ "line": "RERF-GC-1B",
+ "model_id": "ACH-000144",
+ "sex": "male",
+ "mode": "region",
+ "regions": "data/kmers/hg38_regions_dj.tsv",
+ "reads": 10079779,
+ "bases": 1018057679,
+ "seconds": 173,
+ "code_version": "2026-11-19.3",
+ "input_fingerprint": [
+  "2026-11-19.3",
+  "dj",
+  "region",
+  "6992b63993eece6edde25e87589e8f29",
+  "10f5f1922276f66b2278eef5bee80222",
+  "73dd789ba2ff8d6f1b1690eb5c05ece6"
+ ]
+}

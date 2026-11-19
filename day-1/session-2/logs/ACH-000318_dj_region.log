@@ -1,0 +1,12 @@
+TE-10 ACH-000318 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=318,115 elapsed=3s
+  3/9 reads=595,228 elapsed=3s
+  4/9 reads=645,909 elapsed=4s
+  5/9 reads=735,457 elapsed=4s
+  6/9 reads=1,548,565 elapsed=5s
+  7/9 reads=1,820,089 elapsed=8s
+  8/9 reads=3,202,857 elapsed=12s
+  9/9 reads=3,202,857 elapsed=64s
+done results/ACH-000318/dj_region 64s

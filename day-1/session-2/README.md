@@ -20,7 +20,7 @@ Run every command from the project root. Python dependencies are managed with **
 | 9. Summarize | `uv run python scripts/summarize.py region_v2` | seconds | `results/summary.tsv` |
 | 10. DepMap covariates | `uv run python scripts/covariates.py` | ~1 min | `data/meta/covariates.tsv` |
 | 11. Analysis | `uv run python scripts/analyze.py` | ~1 min | `results/analysis/*.tsv` |
-| 12. DJ dosage (optional, pilot) | `build_dj_kmers.py`, `scan_hg38` with tag `dj`, `make_regions_v1.py dj`, then `quantify.py <line> --tag dj --regions data/kmers/hg38_regions_dj.tsv --outname dj_region`, then `dj_summary.py` | ~1 min per line | `results/dj_summary_dj_region.tsv` |
+| 12. DJ dosage (`scripts/run_dj.sh` for all lines) | `build_dj_kmers.py`, `scan_hg38` with tag `dj`, `make_regions_v1.py dj`, then `quantify.py <line> --tag dj --regions data/kmers/hg38_regions_dj.tsv --outname dj_region`, then `dj_summary.py` | ~1 min per line | `results/dj_summary_dj_region.tsv` |
 
 Some steps depend on others. Step 6 needs full-stream results (step 5) for at least one male line; HCC2935 was used, and A427 was held out for validation. Step 11 needs the outputs of steps 9 and 10.
 
@@ -156,7 +156,10 @@ The sources, for reference:
 **Caveats.**
 - These are cell lines with no matched normals, so results show differences between lines, not somatic changes.
 - "Unique in CHM13" doesn't hold across individuals for HSat arrays; female lines show small Y-group background.
-- Absolute rDNA units depend on the ploidy and copy-number correction. That correction uses a proxy, proximal q-arm copy number, which can't see p-arm losses or translocations. The DJ pilot shows the proxy can be badly wrong. HOP-62 has about 5 DJ copies, against 13.3 from the proxy, so its "low rDNA per arm" (16) is really about 42 per remaining p-arm. On near-diploid lines DJ gives 9.0–9.7, close to the expected 10. Prefer rDNA per DJ copy once DJ has been run on all lines.
+- Absolute rDNA units depend on the ploidy and copy-number correction. That correction uses a proxy, proximal q-arm copy number, which can't see p-arm losses or translocations. DJ has now been run on all 89 lines, and `r45_dj` (45S per DJ copy) is the preferred 45S metric.
+  - DJ agrees with the proxy only moderately (Spearman 0.73). 22 of 85 lines have fewer than 0.75× the DJ copies the proxy predicts, which means p-arm loss.
+  - The biggest deficits are U-2 OS (4.9 DJ copies vs 15.2 from the proxy) and HOP-62 (5.0 vs 13.3). For those lines, proxy-based per-arm rDNA is about 3× too low.
+  - On 11 near-diploid lines DJ has a median of 9.4 copies, against the expected 10.
 - **Sequencing batch is confounded with lineage.** 37 lines are 101 bp BAMs and 52 are about 151 bp CRAMs, and the mix differs by lineage. The read-length and GC corrections remove most of the difference, but a lineage-adjusted residual remains for 5S (about −16% in the 151 bp batch, p≈0.05), so batch is a covariate in the adjusted models.
 - Y arrays get no GC correction, since no per-k-mer counts are saved for them.
 - No correction is applied for sequencing errors or k-mer polymorphism, which lower all absolute values.

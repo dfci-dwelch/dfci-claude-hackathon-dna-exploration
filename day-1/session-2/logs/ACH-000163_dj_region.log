@@ -1,0 +1,12 @@
+SW579 ACH-000163 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=4 elapsed=1s
+  2/9 reads=93,889 elapsed=6s
+  3/9 reads=292,675 elapsed=7s
+  4/9 reads=865,879 elapsed=15s
+  5/9 reads=1,615,328 elapsed=19s
+  6/9 reads=2,589,593 elapsed=21s
+  7/9 reads=5,016,252 elapsed=41s
+  8/9 reads=5,016,252 elapsed=109s
+  9/9 reads=8,891,276 elapsed=227s
+done results/ACH-000163/dj_region 228s

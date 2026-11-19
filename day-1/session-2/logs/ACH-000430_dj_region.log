@@ -1,0 +1,12 @@
+TYK-nu ACH-000430 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=2,189,708 elapsed=4s
+  3/9 reads=2,324,916 elapsed=5s
+  4/9 reads=2,408,762 elapsed=7s
+  5/9 reads=3,078,760 elapsed=13s
+  6/9 reads=3,470,118 elapsed=14s
+  7/9 reads=4,259,633 elapsed=16s
+  8/9 reads=5,870,134 elapsed=18s
+  9/9 reads=5,870,134 elapsed=90s
+done results/ACH-000430/dj_region 90s

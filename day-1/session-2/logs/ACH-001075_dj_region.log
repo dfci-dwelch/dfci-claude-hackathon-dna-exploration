@@ -1,0 +1,12 @@
+NCI-H292 ACH-001075 region: 9 jobs
+  reusing 0 checkpointed jobs, 9 to run
+  1/9 reads=0 elapsed=1s
+  2/9 reads=117,535 elapsed=4s
+  3/9 reads=812,247 elapsed=5s
+  4/9 reads=892,899 elapsed=5s
+  5/9 reads=1,578,493 elapsed=8s
+  6/9 reads=1,929,437 elapsed=10s
+  7/9 reads=3,572,423 elapsed=11s
+  8/9 reads=5,025,691 elapsed=12s
+  9/9 reads=5,025,691 elapsed=65s
+done results/ACH-001075/dj_region 65s
